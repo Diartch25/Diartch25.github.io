@@ -11,10 +11,10 @@
 			<nav class="principal">
 				<ul class="nav-principal">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Projects Recents</a></li>
-					<li><a href="#">Others Projects</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#recents">Projects Recents</a></li>
+					<li><a href="#other">Others Projects</a></li>
+					<li><a href="#contact">Contacts</a></li>
 				</ul><!-- .nav-principal -->
 			</nav><!-- .principal -->
 			<div>
@@ -28,7 +28,7 @@
 			</div><!-- .slider -->
 		</header>
 		<div class="content">
-			<div class="section-aboutme">
+			<div id="about" class="section-aboutme">
 				<h2>About me</h2>
 				<div class="aboutme-info">
 					<p>My jobs are inspirating in diferents projects during my students days and many 
@@ -42,42 +42,54 @@
 					<div class="habilities-html5"><p>90%</p></div>
 				</div>
 			</div><!-- .section-aboutme -->
-			<div class="section-recents">
+			<div id="recents" class="section-recents">
 				<h2>Projects Recents</h2>
+
+				<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+		        <label for="tab-1" class="tab-label-1">Project1</label>
+		
+	            <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+		        <label for="tab-2" class="tab-label-2">Project2</label>
+		
+	            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+		        <label for="tab-3" class="tab-label-3">Project3</label>
+
 				<div class="recents-info">
 					<h3>Project 1</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. </p>
 					<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p>
-					<a href="">Ver more</a>
+					<a href="allprojects/project/project1.html">Ver more</a>
 				</div><!-- .recent-info -->
-				<div>
+				<div class="recents-info">
 					<h3>Project 2</h3>
 				</div>
-				<div>
+				<div class="recents-info">
 					<h3>Project 3</h3>
 				</div>
 			</div><!-- .section-recents -->
-			<div class="section-others">
+			<div  id="other" class="section-others">
 				<h2>Others Projects</h2>
 				<div class="other-container">
 					<div class="other-info">
 						<h3>Project 1</h3>
 						<p>Donec mollis, dui ultrices accumsan accumsan, ex tellus aliquam dolor, nec semper felis ipsum a ligula. Phasellus non ante nisi. Proin semper sodales magna nec tincidunt</p>
-						<a href="">View more</a>
+						<a href="allprojects/project/project1.html">View more</a>
 					</div><!-- .other-info -->
 					<div class="other-info">
 						<h3>Project 2</h3>
 						<p>Donec mollis, dui ultrices accumsan accumsan, ex tellus aliquam dolor, nec semper felis ipsum a ligula. Phasellus non ante nisi. Proin semper sodales magna nec tincidunt</p>
-						<a href="">View more</a>
+						<a href="allprojects/project/project1.html">View more</a>
 					</div><!-- .other-info -->
 					<div class="other-info">
 						<h3>Project 3</h3>
 						<p>Donec mollis, dui ultrices accumsan accumsan, ex tellus aliquam dolor, nec semper felis ipsum a ligula. Phasellus non ante nisi. Proin semper sodales magna nec tincidunt</p>
-						<a href="">View more</a>
+						<a href="allprojects/project/project1.html">View more</a>
 					</div><!-- .other-info -->
 				</div>
+				<p><a href="allprojects/allprojects.html"></a></p>
+
 			</div><!-- .section-others -->
-			<div class="section-contacts">
+			<div id="contact" class="section-contacts">
 				<h2>Contacts</h2>
 				<div class="contacts-form">
 					<form id="message" action="">
@@ -94,9 +106,9 @@
 		</div><!-- .content -->
 		<footer>
 			<ul class="nav-footer">
-				<li class="foot-facebook"><a href=""></a></li>
-				<li class="foot-google+"><a href=""></a></li>
-				<li class="foot-gmail"><a href=""></a></li>
+				<li class="foot-facebook"><a href="">Facebook</a></li>
+				<li class="foot-google+"><a href="">Google +</a></li>
+				<li class="foot-gmail"><a href="">Gmail</a></li>
 			</ul>
 			<p>Copyrigth</p>
 		</footer>
