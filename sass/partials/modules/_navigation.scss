@@ -1,0 +1,63 @@
+.principal{
+	background: $gradient;
+	height: 83px;
+	position: fixed;
+	width: 100%;
+	ul{
+		float: left;
+		margin: 24px 14%;
+		height: 35px;
+	}
+
+}
+
+.nav-principal{
+	li{
+		display:  inline-block;
+		border-bottom: 2px solid $invisible;
+		padding: 0 5px 5px 5px;
+		margin: 0 15px;
+		&:hover{
+			border-bottom: 2px solid $cyan;
+		}
+	}
+	a{
+		color:  $cyan-second;
+		height:  35px;
+		font-size:  18px;
+		&:hover{
+			color:  $cyan;
+		}
+	}
+	
+}
+
+@media (max-width: 965px){
+	.nav-principal{
+		li{
+			display:  inline-block;
+		}
+		a{
+			height:  35px;
+			font-size:  15px;
+			margin: 0 10px;
+		}
+	
+	}
+
+}
+
+@media (max-width: 767px){
+	.nav-principal{
+		li{
+			display:  inline-block;
+		}
+		a{
+			height:  35px;
+			font-size:  12px;
+			margin: 0 10px;
+		}
+	
+	}
+
+}
