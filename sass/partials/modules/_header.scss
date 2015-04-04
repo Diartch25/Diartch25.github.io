@@ -5,10 +5,52 @@
 header{
 	background: $background3;
 	overflow: hidden;
-
+	height:  800px;
 	.header-title{
-		height:  600px;
-		padding: 0  14%;
 		
+		padding: 0  14%;
+		margin: 0 auto;
+		width: 757px;
 	}
+
+}
+
+.principal-title{
+	background: $header-principal;
+	margin:280px 0 0 0;
+	padding: 44px 0 11px 0;
+	overflow : hidden;
+	
+	h1, .gag-info{
+		text-align: center;
+		margin: 18px 0;
+	}
+
+	a{
+		padding: 8px 26px;
+		background:  $text-clear;
+		border-radius: 2px;
+		color:  $cyan-second;
+		&:hover{
+			color:  $header-principal;
+			background:  $cyan-second;
+		}
+	}
+
+	h1{
+		font-size: 36px;
+		color: $text-clear;
+	}
+		
+}
+
+.gag-info{
+	font-size:  26px;
+	color: $header-aux;
+}
+
+.principal-button{
+	font-size:  22px;
+	margin: 40px 0;
+	text-align: center;
 }

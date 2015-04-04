@@ -4,60 +4,127 @@
 	position: fixed;
 	width: 100%;
 	ul{
-		float: left;
-		margin: 24px 14%;
+		
 		height: 35px;
 	}
 
 }
 
-.nav-principal{
-	li{
-		display:  inline-block;
-		border-bottom: 2px solid $invisible;
-		padding: 0 5px 5px 5px;
-		margin: 0 15px;
-		&:hover{
-			border-bottom: 2px solid $cyan;
-		}
-	}
+.nav-principal, .nav-lenguaje{
+	
 	a{
 		color:  $cyan-second;
 		height:  35px;
 		font-size:  18px;
+		transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 		&:hover{
 			color:  $cyan;
+			transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+
+		}
+	}
+
+	li{
+		display:  inline-block;
+		border-bottom: 0px solid $cyan;
+		transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+		padding: 0 5px 5px 5px;
+		&:hover{
+			border-bottom: 2px solid $cyan;
+			transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 		}
 	}
 	
+	
+}
+
+.nav-principal{
+	float: left;
+	margin: 24px  0 24px 14%;
+	li{
+		margin: 0 15px;
+	}
+}
+
+.nav-lenguaje{
+	float: right;
+	margin: 24px  5% 24px  0;
+
+	li{
+		padding: 0 15px;
+	}
+
+	li:nth-child(2){
+		box-sizing: border-box;
+		border-left: 2px solid $cyan;
+	}
+}
+
+@media (max-width: 1024px){
+	.principal{
+		ul{
+		
+			  margin: 24px 3% 24px 3%;
+			
+		}
+	}
+
+	.nav-principal, .nav-lenguaje{
+		li{
+			  margin: 0 9px;;
+		}
+	
+	}
+
 }
 
 @media (max-width: 965px){
-	.nav-principal{
-		li{
-			display:  inline-block;
+	.principal{
+
+		ul{
+		
+			margin: 24px 6%;
 		}
+
+	}
+
+	.nav-principal, .nav-lenguaje{
+
 		a{
-			height:  35px;
 			font-size:  15px;
-			margin: 0 10px;
+			 margin: 0 1px;
 		}
+
+		li{
+			margin: 0 5px;
+		}
+
+		
 	
 	}
 
 }
 
 @media (max-width: 767px){
-	.nav-principal{
-		li{
-			display:  inline-block;
+	.principal{
+		ul{
+		
+			margin: 24px 4%;
+			
 		}
+	}
+
+	.nav-principal, .nav-lenguaje{
 		a{
-			height:  35px;
 			font-size:  12px;
-			margin: 0 10px;
+			margin: 0 8px;
+		}
+
+		li{
+			margin: 0 -1px;
 		}
 	
 	}
+
 
 }
