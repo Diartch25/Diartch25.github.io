@@ -5,10 +5,11 @@ $font-general: 'Questrial', Arial;
 
 //Colores --------
 
-$cyan: #59bec0;
-$cyan-second: #47878c;
+$cyan: #59bec0; //Color estandar que siempre usaré
+$cyan-second: #47878c; //Color estandar que siempre usaré
 $invisible: rgba(89, 190, 192, 0);
 $gradient:   -webkit-linear-gradient(top, rgba(252,248,242,1) 0%, rgba(252,248,242,1) 81%, rgba(255,255,255,0) 100%);
+$dark-zone: #fcdab7;
 $background1: #fff6ec;
 $background2: #4e7e7e;
 $header-principal:  rgba(81, 141, 145, 0.3);
@@ -19,3 +20,4 @@ $header-aux: #ecd3b5;
 //Fondos --------
 
 $background3: url(../img/web-img.jpg) no-repeat center;
+$background4: url(../img/office-computer.jpg) no-repeat center;

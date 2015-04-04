@@ -12,6 +12,23 @@
 
 }
 
+.section-recents{
+	background: $background4;
+	background-attachment: fixed;
+	h2{
+		color: $dark-zone;
+		border-bottom: 4px solid $dark-zone;
+	}
+}
+
+.section-contacts{
+	background: $background2;
+	h2{
+		color: $text-clear;
+		border-bottom: 4px solid $text-clear;
+	}
+}
+
 footer{
 
 }

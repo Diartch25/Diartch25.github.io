@@ -4,6 +4,7 @@
 
 header{
 	background: $background3;
+	background-attachment: fixed;
 	overflow: hidden;
 	height:  800px;
 	.header-title{
@@ -31,9 +32,11 @@ header{
 		background:  $text-clear;
 		border-radius: 2px;
 		color:  $cyan-second;
+		transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 		&:hover{
-			color:  $header-principal;
+			color:  $text-clear;
 			background:  $cyan-second;
+			transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 		}
 	}
 

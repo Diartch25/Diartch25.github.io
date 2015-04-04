@@ -48,6 +48,27 @@ ul {
   border-bottom: 4px solid #59bec0;
 }
 
+/* line 15, ../sass/partials/_layout.scss */
+.section-recents {
+  background: url(../img/office-computer.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+/* line 18, ../sass/partials/_layout.scss */
+.section-recents h2 {
+  color: #fcdab7;
+  border-bottom: 4px solid #fcdab7;
+}
+
+/* line 24, ../sass/partials/_layout.scss */
+.section-contacts {
+  background: #4e7e7e;
+}
+/* line 26, ../sass/partials/_layout.scss */
+.section-contacts h2 {
+  color: #e6e6e2;
+  border-bottom: 4px solid #e6e6e2;
+}
+
 /* line 1, ../sass/partials/modules/_navigation.scss */
 .principal {
   background: -webkit-linear-gradient(top, #fcf8f2 0%, #fcf8f2 81%, rgba(255, 255, 255, 0) 100%);
@@ -156,53 +177,56 @@ ul {
 /* line 5, ../sass/partials/modules/_header.scss */
 header {
   background: url(../img/web-img.jpg) no-repeat center;
+  background-attachment: fixed;
   overflow: hidden;
   height: 800px;
 }
-/* line 9, ../sass/partials/modules/_header.scss */
+/* line 10, ../sass/partials/modules/_header.scss */
 header .header-title {
   padding: 0  14%;
   margin: 0 auto;
   width: 757px;
 }
 
-/* line 18, ../sass/partials/modules/_header.scss */
+/* line 19, ../sass/partials/modules/_header.scss */
 .principal-title {
   background: rgba(81, 141, 145, 0.3);
   margin: 280px 0 0 0;
   padding: 44px 0 11px 0;
   overflow: hidden;
 }
-/* line 24, ../sass/partials/modules/_header.scss */
+/* line 25, ../sass/partials/modules/_header.scss */
 .principal-title h1, .principal-title .gag-info {
   text-align: center;
   margin: 18px 0;
 }
-/* line 29, ../sass/partials/modules/_header.scss */
+/* line 30, ../sass/partials/modules/_header.scss */
 .principal-title a {
   padding: 8px 26px;
   background: #e6e6e2;
   border-radius: 2px;
   color: #47878c;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
-/* line 34, ../sass/partials/modules/_header.scss */
+/* line 36, ../sass/partials/modules/_header.scss */
 .principal-title a:hover {
-  color: rgba(81, 141, 145, 0.3);
+  color: #e6e6e2;
   background: #47878c;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
-/* line 40, ../sass/partials/modules/_header.scss */
+/* line 43, ../sass/partials/modules/_header.scss */
 .principal-title h1 {
   font-size: 36px;
   color: #e6e6e2;
 }
 
-/* line 47, ../sass/partials/modules/_header.scss */
+/* line 50, ../sass/partials/modules/_header.scss */
 .gag-info {
   font-size: 26px;
   color: #ecd3b5;
 }
 
-/* line 52, ../sass/partials/modules/_header.scss */
+/* line 55, ../sass/partials/modules/_header.scss */
 .principal-button {
   font-size: 22px;
   margin: 40px 0;
