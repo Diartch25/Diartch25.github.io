@@ -1,0 +1,78 @@
+.aboutme-info, .aboutme-skill{
+	display: inline;
+	width: 50%;
+}
+
+.aboutme-skill{
+	float: right;
+	h3{
+		font-size:  20px;
+		color: $cyan;
+		margin:  0 auto;
+		padding: 19px 0 12px 0;
+		text-align: center;
+
+	}
+
+	h4{
+		color: $normal-text;
+		font-size: 18px;
+		margin: 20px 0 10px 0;
+
+	}
+
+	div{
+		background:  $text-clear;
+		height: 30px;
+		width: 97%;
+	}
+
+	p{
+		background: $cyan;
+		font-size:  17px;
+		height: 30px;
+		color: $background1;
+		padding: 7px 0 2px 24px;
+		box-sizing: border-box;
+	}
+
+
+}
+
+.aboutme-info{
+	float: left;
+
+	p{
+		color: $normal-text;
+  		font-size: 17px;
+  		line-height: 25px;
+  		margin: 19px 0;
+  		padding: 0 17% 0 0;
+	}
+
+
+}
+
+.skill-html5{
+	p{
+		width:  90%
+	}
+}
+
+.skill-css3{
+	p{
+		width:  80%
+	}
+}
+
+.skill-sass{
+	p{
+		width:  75%
+	}
+}
+
+.skill-js{
+	p{
+		width:  70%
+	}
+}

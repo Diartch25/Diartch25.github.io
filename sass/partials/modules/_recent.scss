@@ -1,0 +1,24 @@
+.recents-info{
+	overflow: hidden;
+	background: $background1;
+	height: 400px;
+	div{
+		display: inline;
+		width: 50%;
+	}
+}
+
+.recent-content{
+	box-sizing: border-box;
+	float: left;
+	padding:  30px 3%;
+}
+
+.recent-img{
+	float: right;
+	box-sizing: border-box;
+	img{
+		width: 100%;
+	}
+
+}

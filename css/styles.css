@@ -36,37 +36,45 @@ ul {
 /* line 1, ../sass/partials/_layout.scss */
 .section, footer {
   padding: 140px  14%;
+  overflow: hidden;
 }
 
-/* line 6, ../sass/partials/_layout.scss */
+/* line 7, ../sass/partials/_layout.scss */
 .section-aboutme, .section-others {
   background: #fff6ec;
 }
-/* line 8, ../sass/partials/_layout.scss */
+/* line 9, ../sass/partials/_layout.scss */
 .section-aboutme h2, .section-others h2 {
   color: #59bec0;
   border-bottom: 4px solid #59bec0;
 }
 
-/* line 15, ../sass/partials/_layout.scss */
+/* line 16, ../sass/partials/_layout.scss */
 .section-recents {
   background: url(../img/office-computer.jpg) no-repeat center;
   background-attachment: fixed;
 }
-/* line 18, ../sass/partials/_layout.scss */
+/* line 19, ../sass/partials/_layout.scss */
 .section-recents h2 {
   color: #fcdab7;
   border-bottom: 4px solid #fcdab7;
+  margin: 0  0 0 14%;
 }
 
-/* line 24, ../sass/partials/_layout.scss */
+/* line 26, ../sass/partials/_layout.scss */
 .section-contacts {
   background: #4e7e7e;
 }
-/* line 26, ../sass/partials/_layout.scss */
+/* line 28, ../sass/partials/_layout.scss */
 .section-contacts h2 {
   color: #e6e6e2;
   border-bottom: 4px solid #e6e6e2;
+}
+
+/* line 34, ../sass/partials/_layout.scss */
+.recent-title {
+  padding: 140px 0;
+  background: rgba(81, 141, 145, 0.5);
 }
 
 /* line 1, ../sass/partials/modules/_navigation.scss */
@@ -85,7 +93,7 @@ ul {
 .nav-principal a, .nav-lenguaje a {
   color: #47878c;
   height: 35px;
-  font-size: 18px;
+  font-size: 21px;
   transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 /* line 20, ../sass/partials/modules/_navigation.scss */
@@ -113,7 +121,7 @@ ul {
 }
 /* line 44, ../sass/partials/modules/_navigation.scss */
 .nav-principal li {
-  margin: 0 15px;
+  margin: 0  22px;
 }
 
 /* line 49, ../sass/partials/modules/_navigation.scss */
@@ -190,7 +198,7 @@ header .header-title {
 
 /* line 19, ../sass/partials/modules/_header.scss */
 .principal-title {
-  background: rgba(81, 141, 145, 0.3);
+  background: rgba(81, 141, 145, 0.5);
   margin: 280px 0 0 0;
   padding: 44px 0 11px 0;
   overflow: hidden;
@@ -231,4 +239,106 @@ header .header-title {
   font-size: 22px;
   margin: 40px 0;
   text-align: center;
+}
+
+/* line 1, ../sass/partials/modules/_aboutme.scss */
+.aboutme-info, .aboutme-skill {
+  display: inline;
+  width: 50%;
+}
+
+/* line 6, ../sass/partials/modules/_aboutme.scss */
+.aboutme-skill {
+  float: right;
+}
+/* line 8, ../sass/partials/modules/_aboutme.scss */
+.aboutme-skill h3 {
+  font-size: 20px;
+  color: #59bec0;
+  margin: 0 auto;
+  padding: 19px 0 12px 0;
+  text-align: center;
+}
+/* line 17, ../sass/partials/modules/_aboutme.scss */
+.aboutme-skill h4 {
+  color: #3a5a5a;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+}
+/* line 24, ../sass/partials/modules/_aboutme.scss */
+.aboutme-skill div {
+  background: #e6e6e2;
+  height: 30px;
+  width: 97%;
+}
+/* line 30, ../sass/partials/modules/_aboutme.scss */
+.aboutme-skill p {
+  background: #59bec0;
+  font-size: 17px;
+  height: 30px;
+  color: #fff6ec;
+  padding: 7px 0 2px 24px;
+  box-sizing: border-box;
+}
+
+/* line 42, ../sass/partials/modules/_aboutme.scss */
+.aboutme-info {
+  float: left;
+}
+/* line 45, ../sass/partials/modules/_aboutme.scss */
+.aboutme-info p {
+  color: #3a5a5a;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 19px 0;
+  padding: 0 17% 0 0;
+}
+
+/* line 57, ../sass/partials/modules/_aboutme.scss */
+.skill-html5 p {
+  width: 90%;
+}
+
+/* line 63, ../sass/partials/modules/_aboutme.scss */
+.skill-css3 p {
+  width: 80%;
+}
+
+/* line 69, ../sass/partials/modules/_aboutme.scss */
+.skill-sass p {
+  width: 75%;
+}
+
+/* line 75, ../sass/partials/modules/_aboutme.scss */
+.skill-js p {
+  width: 70%;
+}
+
+/* line 1, ../sass/partials/modules/_recent.scss */
+.recents-info {
+  overflow: hidden;
+  background: #fff6ec;
+  height: 400px;
+}
+/* line 5, ../sass/partials/modules/_recent.scss */
+.recents-info div {
+  display: inline;
+  width: 50%;
+}
+
+/* line 11, ../sass/partials/modules/_recent.scss */
+.recent-content {
+  box-sizing: border-box;
+  float: left;
+  padding: 30px 3%;
+}
+
+/* line 17, ../sass/partials/modules/_recent.scss */
+.recent-img {
+  float: right;
+  box-sizing: border-box;
+}
+/* line 20, ../sass/partials/modules/_recent.scss */
+.recent-img img {
+  width: 100%;
 }
