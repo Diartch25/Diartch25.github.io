@@ -35,3 +35,22 @@ ul{
 	@extend %button;
 }
 
+.big-button{
+	@extend %button-big;
+}
+
+.button-input{
+	@extend %button;
+}
+
+.space-form{
+	background: $background1;
+	border: none;
+	border-radius: 2px;
+	color: $cyan-second;
+	font-size: 15px;
+	height: 20px;
+	padding: 5px;
+	width: $total;
+}
+

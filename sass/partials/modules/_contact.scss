@@ -1,0 +1,14 @@
+.section-contact{
+	p{
+		color: $project;
+		font-size: 20px;
+		margin: 6px 0;
+	}
+}
+
+.contact-form{
+	@extend %forms;
+	margin: $center;
+	width:42%;
+}
+

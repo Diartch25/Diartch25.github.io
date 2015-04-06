@@ -47,6 +47,7 @@
 
 %button{
 	background: $cyan;
+	border: none;
 	border-radius: 2px;
 	box-sizing: $boxing;
 	color: $background1;
@@ -66,6 +67,7 @@
 
 %button-big{
 	background: $cyan;
+	border: none;
 	border-radius: 2px;
 	box-sizing: $boxing;
 	color: $background1;
@@ -80,6 +82,27 @@
 		background: $text-clear;
 		color: $cyan;
 		transition: $hovers;
+	}
+}
+
+%forms{
+	label, textarea{
+		display: block;
+		font-size: 17px;
+		width: $total;
+	}
+	label{
+		margin: 20px 0 5px;
+		color: $text-clear;
+	}
+	textarea{
+		background: $background1;
+		border: none;
+		border-radius: 2px;
+		color: $cyan-second;
+		height: 200px;
+		margin-bottom: 20px;
+		padding: 5px;
 	}
 }
 

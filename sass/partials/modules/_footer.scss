@@ -1,3 +1,38 @@
 footer{
 	background: $foot-webkit;
+	overflow: hidden;
+	p{
+		box-sizing: $boxing;
+		color: $cyan;
+		display: inline;
+		float: right;
+		font-size: 18px;
+		height: 20px;
+		margin: 45px 5% 20px 0;
+		width: 20%;
+	}
+}
+
+.nav-footer{
+	box-sizing: $boxing;
+	display: inline-block;
+	height: 20px;
+	margin: 45px 0 20px 5%;
+	width: 60%;
+	li{
+		
+		float: left;
+		margin: 0 5%;
+	}
+	a{
+		color: $cyan-second;
+		font-size: 18px;
+		transition: $hovers;
+		&:hover{
+			border-bottom: 2px solid $cyan;
+			color: $cyan;
+			transition: $hovers;
+		}
+	}
+
 }
