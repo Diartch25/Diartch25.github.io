@@ -20,6 +20,31 @@
 	
 }
 
+%intro-text-mini{
+	h3{
+		font-size:  18px;
+		color: $cyan;
+		padding: 15px 0 5px;
+		text-align: center;
+	}
+
+	h4{
+		color: $date-text;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	p{
+		color: $normal-text;
+		font-size: 15px;
+		line-height: 20px;
+		margin: 18px 0;
+	}
+	
+	
+	
+}
+
 %button{
 	background: $cyan;
 	border-radius: 2px;
@@ -32,6 +57,25 @@
 	text-align: center;
 	transition: $hovers;
 	width: 159px;
+	&:hover{
+		background: $text-clear;
+		color: $cyan;
+		transition: $hovers;
+	}
+}
+
+%button-big{
+	background: $cyan;
+	border-radius: 2px;
+	box-sizing: $boxing;
+	color: $background1;
+	display: inline-block;
+	font-size: 16px;
+	height: 36px;
+	padding: 10px 0;
+	text-align: center;
+	transition: $hovers;
+	width: 259px;
 	&:hover{
 		background: $text-clear;
 		color: $cyan;

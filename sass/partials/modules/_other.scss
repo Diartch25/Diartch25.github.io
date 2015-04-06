@@ -1,0 +1,43 @@
+.other-container{
+
+	width: $total;
+	border-bottom: $border $cyan;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	a{
+		display: table;
+		margin: $center;
+	}
+}
+.other-cover{
+	background: $background1;
+	display: inline;
+	float: left;
+	margin: 1%;
+	padding: 30px 3%;
+	transition: $hovers;
+	width: 25%;
+	&:hover{
+		background: $cyan;
+		transition: $hovers;
+	}
+}
+
+.other-info{
+	@extend %intro-text-mini;
+	background: $project;
+	box-sizing: $boxing;
+	padding: 20px 4%;
+	img{
+		width: $total;
+	}
+}
+
+.section-others{
+	a{
+		@extend %button-big;
+		display: table;
+		margin: $center;
+	}
+}
