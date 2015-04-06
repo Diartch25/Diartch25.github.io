@@ -1,3 +1,44 @@
+/* line 2, ../sass/partials/_placeholders.scss */
+.aboutme-skill h3, .aboutme-info h3, .recent-content h3 {
+  font-size: 20px;
+  color: #59bec0;
+  padding-top: 19px;
+}
+/* line 7, ../sass/partials/_placeholders.scss */
+.aboutme-skill span, .aboutme-info span, .recent-content span {
+  color: #ea9648;
+  font-size: 14px;
+  text-transform: italic;
+}
+/* line 12, ../sass/partials/_placeholders.scss */
+.aboutme-skill p, .aboutme-info p, .recent-content p {
+  color: #3a5a5a;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 19px 0;
+}
+
+/* line 23, ../sass/partials/_placeholders.scss */
+.button-info-dark {
+  background: #59bec0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #fff6ec;
+  display: inline-block;
+  font-size: 16px;
+  height: 36px;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 159px;
+}
+/* line 35, ../sass/partials/_placeholders.scss */
+.button-info-dark:hover {
+  background: #e6e6e2;
+  color: #59bec0;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 /* line 4, ../sass/partials/_base.scss */
 * {
   margin: 0;
@@ -16,19 +57,19 @@ body {
   font-family: "Questrial", Arial;
 }
 
-/* line 19, ../sass/partials/_base.scss */
+/* line 20, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 23, ../sass/partials/_base.scss */
+/* line 24, ../sass/partials/_base.scss */
 h2 {
   padding: 0 0 16px 0;
   margin: 0 0 86px 0;
   font-size: 30px;
 }
 
-/* line 29, ../sass/partials/_base.scss */
+/* line 30, ../sass/partials/_base.scss */
 ul {
   list-style: none;
 }
@@ -94,24 +135,24 @@ ul {
   color: #47878c;
   height: 35px;
   font-size: 21px;
-  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 /* line 20, ../sass/partials/modules/_navigation.scss */
 .nav-principal a:hover, .nav-lenguaje a:hover {
   color: #59bec0;
-  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 /* line 27, ../sass/partials/modules/_navigation.scss */
 .nav-principal li, .nav-lenguaje li {
   display: inline-block;
   border-bottom: 0px solid #59bec0;
-  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 0 5px 5px 5px;
 }
 /* line 32, ../sass/partials/modules/_navigation.scss */
 .nav-principal li:hover, .nav-lenguaje li:hover {
   border-bottom: 2px solid #59bec0;
-  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* line 41, ../sass/partials/modules/_navigation.scss */
@@ -193,14 +234,14 @@ header {
 header .header-title {
   padding: 0  14%;
   margin: 0 auto;
-  width: 757px;
+  width: 59%;
 }
 
 /* line 19, ../sass/partials/modules/_header.scss */
 .principal-title {
   background: rgba(81, 141, 145, 0.5);
   margin: 280px 0 0 0;
-  padding: 44px 0 11px 0;
+  padding: 44px 0  5% 0;
   overflow: hidden;
 }
 /* line 25, ../sass/partials/modules/_header.scss */
@@ -251,94 +292,102 @@ header .header-title {
 .aboutme-skill {
   float: right;
 }
-/* line 8, ../sass/partials/modules/_aboutme.scss */
+/* line 9, ../sass/partials/modules/_aboutme.scss */
 .aboutme-skill h3 {
-  font-size: 20px;
-  color: #59bec0;
   margin: 0 auto;
-  padding: 19px 0 12px 0;
   text-align: center;
 }
-/* line 17, ../sass/partials/modules/_aboutme.scss */
+/* line 15, ../sass/partials/modules/_aboutme.scss */
 .aboutme-skill h4 {
   color: #3a5a5a;
   font-size: 18px;
   margin: 20px 0 10px 0;
 }
-/* line 24, ../sass/partials/modules/_aboutme.scss */
+/* line 22, ../sass/partials/modules/_aboutme.scss */
 .aboutme-skill div {
   background: #e6e6e2;
   height: 30px;
   width: 97%;
 }
-/* line 30, ../sass/partials/modules/_aboutme.scss */
+/* line 28, ../sass/partials/modules/_aboutme.scss */
 .aboutme-skill p {
   background: #59bec0;
   font-size: 17px;
   height: 30px;
   color: #fff6ec;
-  padding: 7px 0 2px 24px;
+  padding: 4px 0 2px 24px;
   box-sizing: border-box;
 }
 
-/* line 42, ../sass/partials/modules/_aboutme.scss */
+/* line 40, ../sass/partials/modules/_aboutme.scss */
 .aboutme-info {
   float: left;
 }
-/* line 45, ../sass/partials/modules/_aboutme.scss */
+/* line 43, ../sass/partials/modules/_aboutme.scss */
 .aboutme-info p {
-  color: #3a5a5a;
-  font-size: 17px;
-  line-height: 25px;
-  margin: 19px 0;
   padding: 0 17% 0 0;
 }
 
-/* line 57, ../sass/partials/modules/_aboutme.scss */
+/* line 52, ../sass/partials/modules/_aboutme.scss */
 .skill-html5 p {
   width: 90%;
 }
 
-/* line 63, ../sass/partials/modules/_aboutme.scss */
+/* line 58, ../sass/partials/modules/_aboutme.scss */
 .skill-css3 p {
   width: 80%;
 }
 
-/* line 69, ../sass/partials/modules/_aboutme.scss */
+/* line 64, ../sass/partials/modules/_aboutme.scss */
 .skill-sass p {
   width: 75%;
 }
 
-/* line 75, ../sass/partials/modules/_aboutme.scss */
+/* line 70, ../sass/partials/modules/_aboutme.scss */
 .skill-js p {
   width: 70%;
 }
 
 /* line 1, ../sass/partials/modules/_recent.scss */
 .recents-info {
-  overflow: hidden;
   background: #fff6ec;
-  height: 400px;
+  height: 500px;
+  overflow: hidden;
+  padding: 0 3%;
 }
-/* line 5, ../sass/partials/modules/_recent.scss */
-.recents-info div {
+
+/* line 8, ../sass/partials/modules/_recent.scss */
+.recent-content {
   display: inline;
   width: 50%;
-}
-
-/* line 11, ../sass/partials/modules/_recent.scss */
-.recent-content {
   box-sizing: border-box;
   float: left;
-  padding: 30px 3%;
+  padding: 12px 3% 12px 0;
 }
 
-/* line 17, ../sass/partials/modules/_recent.scss */
+/* line 15, ../sass/partials/modules/_recent.scss */
 .recent-img {
-  float: right;
+  display: inline;
+  width: 50%;
   box-sizing: border-box;
+  float: right;
+  padding: 32px 0 32px 6%;
 }
-/* line 20, ../sass/partials/modules/_recent.scss */
+/* line 19, ../sass/partials/modules/_recent.scss */
 .recent-img img {
   width: 100%;
+}
+
+/* line 26, ../sass/partials/modules/_recent.scss */
+.recent-links {
+  display: inline;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 4px solid #59bec0;
+  float: left;
+  overflow: hidden;
+}
+/* line 31, ../sass/partials/modules/_recent.scss */
+.recent-links a {
+  margin: 20px 2% 0 0;
 }

@@ -1,3 +1,44 @@
+%intro-text {
+	h3{
+		font-size:  20px;
+		color: $cyan;
+		padding-top: 19px;
+	}
+	span{
+		color: $date-text;
+		font-size: 14px;
+		text-transform: italic;
+	}
+	p{
+		color: $normal-text;
+		font-size: 17px;
+		line-height: $line-text;
+		margin: 19px 0;
+	}
+	
+	
+	
+}
+
+%button{
+	background: $cyan;
+	border-radius: 2px;
+	box-sizing: $boxing;
+	color: $background1;
+	display: inline-block;
+	font-size: 16px;
+	height: 36px;
+	padding: 10px 0;
+	text-align: center;
+	transition: $hovers;
+	width: 159px;
+	&:hover{
+		background: $text-clear;
+		color: $cyan;
+		transition: $hovers;
+	}
+}
+
 %text-hidden {
  	text-indent: 100%;
  	overflow: hidden;

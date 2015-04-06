@@ -2,7 +2,7 @@
 	background: $gradient;
 	height: 83px;
 	position: fixed;
-	width: 100%;
+	width: $total;
 	ul{
 		
 		height: 35px;
@@ -16,10 +16,10 @@
 		color:  $cyan-second;
 		height:  35px;
 		font-size:  21px;
-		transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+		transition: $hovers;
 		&:hover{
 			color:  $cyan;
-			transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+			transition: $hovers;
 
 		}
 	}
@@ -27,11 +27,11 @@
 	li{
 		display:  inline-block;
 		border-bottom: 0px solid $cyan;
-		transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+		transition: $hovers;
 		padding: 0 5px 5px 5px;
 		&:hover{
 			border-bottom: 2px solid $cyan;
-			transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+			transition: $hovers;
 		}
 	}
 	

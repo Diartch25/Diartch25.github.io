@@ -1,0 +1,15 @@
+@mixin font-size($size) {
+  	font-size: $size + px;
+  	font-size: ($size / 10) + rem;
+}
+
+
+@mixin info-button($font-size, $text-color, $background){
+	
+}
+
+@mixin div-config($width){
+	display: inline;
+	width: ($middle + $width);
+	box-sizing: $boxing;
+}

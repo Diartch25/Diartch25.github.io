@@ -8,7 +8,7 @@
 	background: $background1;
 	h2{
 		color: $cyan;
-		border-bottom: 4px solid $cyan;
+		border-bottom: $border $cyan;
 	}
 
 }
@@ -18,7 +18,7 @@
 	background-attachment: fixed;
 	h2{
 		color: $dark-zone;
-		border-bottom: 4px solid $dark-zone;
+		border-bottom: $border $dark-zone;
 		margin:0  0 0 14%;
 	}
 }
@@ -27,7 +27,7 @@
 	background: $background2;
 	h2{
 		color: $text-clear;
-		border-bottom: 4px solid $text-clear;
+		border-bottom: $border $text-clear;
 	}
 }
 

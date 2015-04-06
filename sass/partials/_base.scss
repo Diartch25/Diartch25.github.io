@@ -14,6 +14,7 @@ html {
 body{
 	background: $background2;
 	font-family: $font-general;
+
 }
 
 a{
@@ -28,5 +29,9 @@ h2{
 
 ul{
 	list-style: none;
+}
+
+.button-info-dark{
+	@extend %button;
 }
 

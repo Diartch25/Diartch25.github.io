@@ -16,9 +16,27 @@ $header-principal:  rgba(81, 141, 145, 0.5);
 $text-clear: #e6e6e2;
 $header-aux: #ecd3b5;
 $normal-text: #3a5a5a;
+$date-text: #ea9648;
 
 
 //Fondos --------
 
 $background3: url(../img/web-img.jpg) no-repeat center;
 $background4: url(../img/office-computer.jpg) no-repeat center;
+
+//Texto  --------
+$line-text: 25px;
+
+//Tamaños --------
+$middle: 50%;
+$total: 100%;
+
+//Posiciones --------
+$center: 0 auto;
+$boxing: border-box;
+
+//transiciones fijas -------
+$hovers: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+
+//configuraciones -------
+$border: 4px solid;

@@ -10,8 +10,8 @@ header{
 	.header-title{
 		
 		padding: 0  14%;
-		margin: 0 auto;
-		width: 757px;
+		margin: $center;
+		width: 59%;
 	}
 
 }
@@ -19,7 +19,7 @@ header{
 .principal-title{
 	background: $header-principal;
 	margin:280px 0 0 0;
-	padding: 44px 0 11px 0;
+	padding: 44px 0  5% 0;
 	overflow : hidden;
 	
 	h1, .gag-info{
@@ -32,11 +32,11 @@ header{
 		background:  $text-clear;
 		border-radius: 2px;
 		color:  $cyan-second;
-		transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+		transition: $hovers;
 		&:hover{
 			color:  $text-clear;
 			background:  $cyan-second;
-			transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+			transition: $hovers;
 		}
 	}
 
