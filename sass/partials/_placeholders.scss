@@ -103,11 +103,6 @@
 		height: 200px;
 		margin-bottom: 20px;
 		padding: 5px;
+		resize: vertical;
 	}
-}
-
-%text-hidden {
- 	text-indent: 100%;
- 	overflow: hidden;
- 	white-space: nowrap;
 }

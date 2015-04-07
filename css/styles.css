@@ -78,7 +78,8 @@
   color: #47878c;
   height: 200px;
   margin-bottom: 20px;
-  padding: 5px; }
+  padding: 5px;
+  resize: vertical; }
 
 * {
   margin: 0;
