@@ -21,4 +21,12 @@
 @import "partials/modules/other";
 @import "partials/modules/contact";
 @import "partials/modules/footer";
+
+//Media Queries
+
+@import "partials/queries/queries-navigation";
+@import "partials/queries/queries-tabs";
+
+//Especiales
+
 @import "partials/especials/tabs";
