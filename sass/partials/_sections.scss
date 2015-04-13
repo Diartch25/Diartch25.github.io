@@ -1,0 +1,43 @@
+.section-aboutme, .section-others{
+	background: $background1;
+	h2{
+		color: $cyan;
+		border-bottom: $border $cyan;
+	}
+
+}
+
+.section-contact{
+	background: $background2;
+	h2{
+		color: $text-clear;
+		border-bottom: $border $text-clear;
+	}
+	p{
+		color: $project;
+		font-size: 20px;
+		margin: 6px 0;
+	}
+}
+
+.other-container{
+
+	width: $total;
+	border-bottom: $border $cyan;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.section-recents{
+	background: $background4;
+	background-attachment: fixed;
+	h2{
+		color: $dark-zone;
+		border-bottom: $border $dark-zone;
+		margin:0  0 0 14%;
+	}
+}
+
+
+

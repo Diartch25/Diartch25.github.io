@@ -1,33 +1,5 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Questrial);
-.aboutme-skill h3, .aboutme-info h3, .recent-content h3 {
-  font-size: 20px;
-  color: #59bec0;
-  padding-top: 19px; }
-.aboutme-skill span, .aboutme-info span, .recent-content span {
-  color: #ea9648;
-  font-size: 14px;
-  text-transform: italic; }
-.aboutme-skill p, .aboutme-info p, .recent-content p {
-  color: #3a5a5a;
-  font-size: 17px;
-  line-height: 25px;
-  margin: 19px 0; }
-
-.other-info h3 {
-  font-size: 18px;
-  color: #59bec0;
-  padding: 15px 0 5px;
-  text-align: center; }
-.other-info h4 {
-  color: #ea9648;
-  font-size: 13px;
-  text-align: center; }
-.other-info p {
-  color: #3a5a5a;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 18px 0; }
-
 .button-info-dark, .button-input {
   background: #59bec0;
   border: none;
@@ -64,23 +36,6 @@
     color: #59bec0;
     transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1); }
 
-.contact-form label, .contact-form textarea {
-  display: block;
-  font-size: 17px;
-  width: 100%; }
-.contact-form label {
-  margin: 20px 0 5px;
-  color: #e6e6e2; }
-.contact-form textarea {
-  background: #fff6ec;
-  border: none;
-  border-radius: 2px;
-  color: #47878c;
-  height: 200px;
-  margin-bottom: 20px;
-  padding: 5px;
-  resize: vertical; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -114,15 +69,65 @@ ul {
   padding: 5px;
   width: 100%; }
 
+.standard-text h3 {
+  font-size: 20px;
+  color: #59bec0;
+  padding-top: 19px; }
+.standard-text span {
+  color: #ea9648;
+  font-size: 14px;
+  text-transform: italic; }
+.standard-text p {
+  color: #3a5a5a;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 19px 0; }
+
+.standard-text-mini h3 {
+  font-size: 18px;
+  color: #59bec0;
+  padding: 15px 0 5px;
+  text-align: center; }
+.standard-text-mini h4 {
+  color: #ea9648;
+  font-size: 13px;
+  text-align: center; }
+.standard-text-mini p {
+  color: #3a5a5a;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 18px 0; }
+
 .section {
   padding: 140px  14%;
   overflow: hidden; }
+
+.recent-title {
+  padding: 140px 0;
+  background: rgba(81, 141, 145, 0.5); }
 
 .section-aboutme, .section-others {
   background: #fff6ec; }
   .section-aboutme h2, .section-others h2 {
     color: #59bec0;
     border-bottom: 4px solid #59bec0; }
+
+.section-contact {
+  background: #4e7e7e; }
+  .section-contact h2 {
+    color: #e6e6e2;
+    border-bottom: 4px solid #e6e6e2; }
+  .section-contact p {
+    color: #fee7d9;
+    font-size: 20px;
+    margin: 6px 0; }
+
+.other-container {
+  width: 100%;
+  border-bottom: 4px solid #59bec0;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 .section-recents {
   background: url(../img/office-computer.jpg) no-repeat center;
@@ -131,16 +136,6 @@ ul {
     color: #fcdab7;
     border-bottom: 4px solid #fcdab7;
     margin: 0  0 0 14%; }
-
-.section-contact {
-  background: #4e7e7e; }
-  .section-contact h2 {
-    color: #e6e6e2;
-    border-bottom: 4px solid #e6e6e2; }
-
-.recent-title {
-  padding: 140px 0;
-  background: rgba(81, 141, 145, 0.5); }
 
 .principal {
   background: -webkit-linear-gradient(top, #fcf8f2 0%, #fcf8f2 81%, rgba(255, 255, 255, 0) 100%);
@@ -183,12 +178,12 @@ ul {
     box-sizing: border-box;
     border-left: 2px solid #59bec0; }
 
-header {
+.header-principal {
   background: url(../img/web-img.jpg) no-repeat center;
   background-attachment: fixed;
   overflow: hidden;
   height: 800px; }
-  header .header-title {
+  .header-principal .header-title {
     padding: 0  14%;
     margin: 0 auto;
     width: 59%; }
@@ -267,9 +262,14 @@ header {
   width: 70%; }
 
 .recent-info {
+  position: relative;
+  width: 100%;
   background: #fff6ec;
   overflow: hidden;
-  padding: 0 3% 35px; }
+  padding: 0 3% 35px;
+  height: 460px;
+  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0 3px 3px 3px; }
 
 .recent-content {
   display: inline;
@@ -297,13 +297,6 @@ header {
   .recent-links a {
     margin: 20px 2% 0 0; }
 
-.other-container {
-  width: 100%;
-  border-bottom: 4px solid #59bec0;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-  overflow: hidden; }
-
 .other-cover {
   background: #fff6ec;
   display: inline;
@@ -327,14 +320,25 @@ header {
   display: table;
   margin: 0 auto; }
 
-.section-contact p {
-  color: #fee7d9;
-  font-size: 20px;
-  margin: 6px 0; }
-
 .contact-form {
   margin: 0 auto;
   width: 42%; }
+  .contact-form label, .contact-form textarea {
+    display: block;
+    font-size: 17px;
+    width: 100%; }
+  .contact-form label {
+    margin: 20px 0 5px;
+    color: #e6e6e2; }
+  .contact-form textarea {
+    background: #fff6ec;
+    border: none;
+    border-radius: 2px;
+    color: #47878c;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 5px;
+    resize: vertical; }
 
 footer {
   background: -webkit-linear-gradient(bottom, #fcf8f2 0%, #fcf8f2 81%, rgba(255, 255, 255, 0) 100%);
@@ -391,6 +395,15 @@ footer {
     margin: 0 8px; }
   .nav-principal li, .nav-lenguaje li {
     margin: 0 -1px; } }
+.content-allprojects {
+  background: #fff6ec; }
+  .content-allprojects h1 {
+    padding: 20px 0 0 0;
+    font-size: 12px; }
+
+.project-content-a, .project-content-b {
+  background: #A7C6C5; }
+
 .recent-tabs {
   position: relative; }
 
@@ -405,15 +418,6 @@ footer {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   cursor: pointer; }
-
-.recent-tabs input#tab-2 {
-  left: 120px; }
-
-.recent-tabs input#tab-3 {
-  left: 240px; }
-
-.recent-tabs input#tab-4 {
-  left: 360px; }
 
 .recent-tabs label {
   background: rgba(89, 190, 192, 0.6);
@@ -464,78 +468,6 @@ footer {
   -o-animation: page 0.2s linear;
   animation: page 0.2s linear; }
 
-.clear-shadow {
-  clear: both; }
-
-.recent-info {
-  position: relative;
-  width: 100%;
-  height: 433px;
-  z-index: 5;
-  overflow: hidden;
-  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 0 3px 3px 3px; }
-
-.recent-info div {
-    /*position: absolute;
-	top: 0;
-	padding: 10px 40px;
-	z-index: 1;
-    opacity: 0;*/
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  transition: all linear 0.3s; }
-
-/**/
-.project1, .project3 {
-  -webkit-transform: translateX(-250px);
-  -moz-transform: translateX(-250px);
-  -o-transform: translateX(-250px);
-  -ms-transform: translateX(-250px);
-  transform: translateX(-250px); }
-
-.project2 {
-  -webkit-transform: translateX(250px);
-  -moz-transform: translateX(250px);
-  -o-transform: translateX(250px);
-  -ms-transform: translateX(250px);
-  transform: translateX(250px); }
-
-.recent-tabs input.tab-selector-1:checked ~ .recent-info .project1,
-.recent-tabs input.tab-selector-2:checked ~ .recent-info .project2,
-.recent-tabs input.tab-selector-3:checked ~ .recent-info .project3 {
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
-  z-index: 100;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  -webkit-transition: all ease-out 0.2s 0.1s;
-  -moz-transition: all ease-out 0.2s 0.1s;
-  -o-transition: all ease-out 0.2s 0.1s;
-  -ms-transition: all ease-out 0.2s 0.1s;
-  transition: all ease-out 0.2s 0.1s; }
-
-/*.recent-info div h2,
-.recent-info div h3{
-	color: #398080;
-}
-.recent-info div p {
-	//font-size: 14px;
-	//line-height: 22px;
-	//font-style: italic;
-	//text-align: left;
-	margin: 0;
-	//color: #777;
-	padding-left: 15px;
-	//font-family: Cambria, Georgia, serif;
-	//border-left: 8px solid rgba(63,148,148, 0.1);
-}/**/
 @keyframes "page" {
   0% {
     left: 0; }
@@ -564,13 +496,36 @@ footer {
     left: 10px; }
   100% {
     left: 0; } }
-@-o-keyframes "page" {
-  0% {
-    left: 0; }
-  50% {
-    left: 10px; }
-  100% {
-    left: 0; } }
-/**/
+/* 
+
+// Comentarios
+
+Desglose de la segunda entrega del proyecto final:
+
+css-parcial 30/40
+	+Uso de buenas prácticas: 12/15
+
+		Los estilos de los h2 de cada sección no deberían estar dentro de 
+		layout, pues no son reglas de diagramación. Mejor crear 
+		clases para estos encabezados y aplicar los estilos en otra parte.
+
+    +Organización de las hojas de estilos: 10/10
+        
+    +Uso adecuado de SASS y CSS: 8/15
+        
+        En el caso de los gradientes, es mejor usar un placeholder o un mixin
+        que variables para agrupar todos las reglas en un sólo lugar.
+        Los placeholders deberían ser más simples, no deberían tener otros
+        selectores dentro. Es confuso y el mantenimiento es difícil.
+        Sólo tiene sentido usar un placeholder cuando esas reglas se 
+        van a usar varias veces. Si no, como en el caso de "%forms", mejor escribir 
+       	las reglas una sola vez en el lugar correcto.
+        No hay un uso correcto de SASS en los estilos de los tabs, es CSS convencional.
+
+Cualquier duda me avisa. Saludos.
+
+//
+
+*/
 
 /*# sourceMappingURL=styles.css.map */

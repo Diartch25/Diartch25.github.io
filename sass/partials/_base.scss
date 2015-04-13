@@ -54,3 +54,44 @@ ul{
 	width: $total;
 }
 
+.standard-text{
+	h3{
+		font-size:  20px;
+		color: $cyan;
+		padding-top: 19px;
+	}
+	span{
+		color: $date-text;
+		font-size: 14px;
+		text-transform: italic;
+	}
+	p{
+		color: $normal-text;
+		font-size: 17px;
+		line-height: $line-text;
+		margin: 19px 0;
+	}
+}
+
+.standard-text-mini{
+	h3{
+		font-size:  18px;
+		color: $cyan;
+		padding: 15px 0 5px;
+		text-align: center;
+	}
+
+	h4{
+		color: $date-text;
+		font-size: 13px;
+		text-align: center;
+	}
+	
+	p{
+		color: $normal-text;
+		font-size: 15px;
+		line-height: 20px;
+		margin: 18px 0;
+	}
+}
+

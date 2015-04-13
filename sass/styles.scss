@@ -12,6 +12,7 @@
 @import "partials/placeholders";
 @import "partials/base";
 @import "partials/layout";
+@import "partials/sections";
 
 // Módulos
 @import "partials/modules/navigation";
@@ -27,6 +28,42 @@
 @import "partials/queries/queries-navigation";
 @import "partials/queries/queries-tabs";
 
+//Paginas
+
+@import "partials/pages/allproject";
+
 //Especiales
 
 @import "partials/especials/tabs";
+
+/* 
+
+// Comentarios
+
+Desglose de la segunda entrega del proyecto final:
+
+css-parcial 30/40
+	+Uso de buenas prácticas: 12/15
+
+		Los estilos de los h2 de cada sección no deberían estar dentro de 
+		layout, pues no son reglas de diagramación. Mejor crear 
+		clases para estos encabezados y aplicar los estilos en otra parte.
+
+    +Organización de las hojas de estilos: 10/10
+        
+    +Uso adecuado de SASS y CSS: 8/15
+        
+        En el caso de los gradientes, es mejor usar un placeholder o un mixin
+        que variables para agrupar todos las reglas en un sólo lugar.
+        Los placeholders deberían ser más simples, no deberían tener otros
+        selectores dentro. Es confuso y el mantenimiento es difícil.
+        Sólo tiene sentido usar un placeholder cuando esas reglas se 
+        van a usar varias veces. Si no, como en el caso de "%forms", mejor escribir 
+       	las reglas una sola vez en el lugar correcto.
+        No hay un uso correcto de SASS en los estilos de los tabs, es CSS convencional.
+
+Cualquier duda me avisa. Saludos.
+
+//
+
+*/

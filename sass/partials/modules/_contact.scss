@@ -1,13 +1,23 @@
-.section-contact{
-	p{
-		color: $project;
-		font-size: 20px;
-		margin: 6px 0;
-	}
-}
-
 .contact-form{
-	@extend %forms;
+	label, textarea{
+		display: block;
+		font-size: 17px;
+		width: $total;
+	}
+	label{
+		margin: 20px 0 5px;
+		color: $text-clear;
+	}
+	textarea{
+		background: $background1;
+		border: none;
+		border-radius: 2px;
+		color: $cyan-second;
+		height: 200px;
+		margin-bottom: 20px;
+		padding: 5px;
+		resize: vertical;
+	}
 	margin: $center;
 	width:42%;
 }

@@ -4,33 +4,6 @@
 
 }
 
-.section-aboutme, .section-others{
-	background: $background1;
-	h2{
-		color: $cyan;
-		border-bottom: $border $cyan;
-	}
-
-}
-
-.section-recents{
-	background: $background4;
-	background-attachment: fixed;
-	h2{
-		color: $dark-zone;
-		border-bottom: $border $dark-zone;
-		margin:0  0 0 14%;
-	}
-}
-
-.section-contact{
-	background: $background2;
-	h2{
-		color: $text-clear;
-		border-bottom: $border $text-clear;
-	}
-}
-
 .recent-title{
 	padding: 140px 0;
 	background: $header-principal;
