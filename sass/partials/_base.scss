@@ -12,7 +12,7 @@ html {
 }
 
 body{
-	background: $background2;
+	background: $background1;
 	font-family: $font-general;
 
 }
@@ -92,6 +92,39 @@ ul{
 		font-size: 15px;
 		line-height: 20px;
 		margin: 18px 0;
+	}
+}
+
+.subpages{
+	background: $background1;
+
+	h1{
+		border-bottom: $border $cyan;
+		color: $cyan;
+		font-size: 30px;
+		margin-bottom: 30px;
+		padding: 0 0 16px 0
+
+		
+	}
+	& > p{
+		color: $normal-text;
+		margin-bottom: 40px;
+		font-size: 19px;
+		line-height: 30px;
+	}
+	& > img{
+		width: 100%;
+	}
+}
+
+.bread{
+	a{
+		text-decoration: none;
+		color: $cyan-second;
+		&:hover{
+			color: $cyan;
+		}
 	}
 }
 

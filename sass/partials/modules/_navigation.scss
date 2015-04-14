@@ -1,5 +1,5 @@
 .principal{
-	background: $gmenu-webkit;
+	@extend %gradient;
 	height: 83px;
 	position: fixed;
 	width: $total;

@@ -1,5 +1,5 @@
 footer{
-	background: $foot-webkit;
+	@extend %gradient-inversion;
 	overflow: hidden;
 	p{
 		box-sizing: $boxing;

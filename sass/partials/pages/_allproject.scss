@@ -3,11 +3,77 @@
 
 
 	h1{
-		padding: 20px 0 0 0;
-		font-size: 12px
+		border-bottom: $border $cyan;
+		color: $cyan;
+		font-size: 30px;
+		margin-bottom: 30px;
+		padding: 0 0 16px 0
+		
+	}
+	& > p{
+		color: $normal-text;
+		margin-bottom: 40px;
+		font-size: 19px;
+		line-height: 30px;
 	}
 }
 
-.project-content-a, .project-content-b{
-	background: #A7C6C5;
+.img-project-a, .img-project-b{
+	background: $background1;
+	width: 38%;
+	box-sizing: $boxing;
+	img{
+		width: $total;
+		margin: 10px 0;
+	}
 }
+
+.img-project-a{
+	float: left;
+	margin: 20px 0 20px 2%;
+}
+
+.img-project-b{
+	float: right;
+	margin: 20px 2% 20px 0;
+}
+
+.project-blockinfo-a, .project-blockinfo-b{
+	background: $project;
+	box-sizing: $boxing;
+	margin: 20px 2%;
+	padding: 20px 2%;
+	width: 56%;
+	p:nth-last-child(2){
+		border-bottom: $border $cyan;
+		padding-bottom: 20px;
+	}
+
+}
+
+.project-blockinfo-a{
+	float: right;
+}
+
+.project-blockinfo-b{
+	float: left;
+}
+
+.project-content{
+	background: $project-cover;
+	box-sizing: $boxing;
+	margin:30px 0;
+	overflow: hidden;
+}
+
+.view-pages{
+	width: 100%;
+		ul{
+			margin: $center;
+			li{
+				display: inline;
+			}
+		}
+}
+
+
