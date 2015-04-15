@@ -1,54 +1,19 @@
 {
-	"nombre":"Proyectos",
 	"proyecto":[
 			{
 				"nombre":"Proyecto A",
-
-				"infos": "<p>1  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. 
-							Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. 
-							Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. 
-							Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel 
-							nisi tempus auctor.</p>
-							<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel
-							 nisi tempus auctor.</p>
-							<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel
-							 nisi tempus auctor.</p>
-							<p><span>25 March, 2015</span></p>",
-
+				"infos": "<p>1  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
 				"imagen": "img/img-project-default.png"
 			},
 			{
 				"nombre":"Proyecto B",
-				"infos": "2  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. 
-							Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. 
-							Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. 
-							Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel 
-							nisi tempus auctor.</p>
-							<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel
-							 nisi tempus auctor.</p>
-							<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel
-							 nisi tempus auctor.</p>
-							<p><span>25 March, 2015</span></p>",
+				"infos": "<p>2  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
 				"imagen": "img/img-project-default.png"
 			},
 			{
 				"nombre":"Proyecto C",
-				"infos": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. 
-							Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. 
-							Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. 
-							Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel 
-							nisi tempus auctor.</p>
-							<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel
-							 nisi tempus auctor.</p>
-							<p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel
-							 nisi tempus auctor.</p>
-							<p><span>25 March, 2015</span></p>",
+				"infos": "<p>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
 				"imagen": "img/img-project-default.png"
-			},
-
-				
+			}			
 		]
 }
