@@ -73,6 +73,9 @@ h2 {
 ul {
   list-style: none; }
 
+.button-input {
+  position: relative; }
+
 .space-form {
   background: #fff6ec;
   border: none;

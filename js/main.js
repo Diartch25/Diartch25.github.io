@@ -35,8 +35,14 @@ var appPortfolio = {};
 
         appPortfolio.taskPortfolio = function(){
 
-            function drawnTab(){
-                   
+            function processPortfolio(){
+                    var  contactos = document.getElementById("message");
+
+                    // Validación 
+
+                   window.onload =  function(){
+                        document.getElementById("message").eventListene('submit', formValidate;
+                    }
             } 
             return{
 
@@ -50,11 +56,7 @@ var appPortfolio = {};
                         success:function(data){
               
                            jsondata= data.proyecto;   
-                           // Prueba:  appPortfolio.taskPortfolio.redirectionDrawn(jsondata , 0);
                             // Prueba:  console.log(data.proyecto[1].infos);
-
-                            // Prueba: appPortfolio.taskPortfolio.projectDirection(jsondata);
-                
                         },
                         error:function(jqXHR, textStatus, errorThrown) {
                             console.log("Text Status:" +textStatus+"\nError:"+errorThrown);
@@ -90,11 +92,12 @@ var appPortfolio = {};
 
                 // Función Validadora de los formularios
 
-                formValidate: function(name, mail, message){
+                formValidate: function(form){
+                    var caracterEmail = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
+                    form.
                     if (name !== null){
-                        name.validate('white', '#f9bdbd')
                     }else{
-                        
+                        name.validate('white', '#f9bdbd');
                     }
                 }
 
@@ -132,6 +135,7 @@ var appPortfolio = {};
         // Envio de los datos del formulario
 
         document.getElementsById("send").onclick = function(){
+
                 var name = document.getElementById("name").value();
                 appPortfolio.taskPortfolio.formValidate(name);
         }

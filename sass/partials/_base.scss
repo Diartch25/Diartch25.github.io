@@ -41,6 +41,7 @@ ul{
 
 .button-input{
 	@extend %button;
+	position: relative;
 }
 
 .space-form{
