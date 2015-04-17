@@ -1,48 +1,71 @@
-//
-// -- Framework
-//
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
 
-// -- Aumenthing
 
-Function.prototype.method = function(name, func){
-    
-    if(!this.prototype[name]){
-        this.prototype[name] = func;
-    } 
-    return this;
-};
-
-// -- Cambia Textos
-
-Element.method('addHtml', function(s){
-    this.innerHTML = s;
-    return this;
-});
-
-// -- Establece un color al validar
-Element.method('validate', function(c, b){
-    this.style.color = c;
-    this.style.background = b;
-   return this;
-});
-
-/////////////////////////////////////////////////////////////////////////////////////////////////
 
 var jsondata ="";
 var appPortfolio = {};
 
-        appPortfolio.taskPortfolio = function(){
+            appPortfolio.taskPortfolio = function(){
+                var caracterEmail = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
+                var correct = true;
+                var contacts = document.formgroup;
+                window.onload =  function(){
+                    document.formgroup.addEventListener('submit', processPortfolio);
+                }
 
-            function processPortfolio(){
-                    var  contactos = document.getElementById("message");
+                function processPortfolio(form){ 
+                    /////////////////////////////////////////////////////////////////////////////////////////////////
 
-                    // Validación 
+                    //
+                    // -- Framework
+                    //
 
-                   window.onload =  function(){
-                        document.getElementById("message").eventListene('submit', formValidate;
+
+                    // -- Aumenthing
+
+                    Function.prototype.method = function(name, func){
+    
+                        if(!this.prototype[name]){
+                            this.prototype[name] = func;
+                        } 
+                        return this;
+                    };
+                   
+                    // -- Cambia Textos
+
+                    Element.method('changetext', function(s){
+                        this.innerHTML = s;
+                        return this;
+                    });
+
+                    // -- Establece un color al validar
+                    Element.method('validate', function(c, b){
+                        this.style.color = c;
+                        this.style.background = b;
+                       return this;
+                    });
+
+                    /////////////////////////////////////////////////////////////////////////////////////////////////
+
+                    form.preventDefault();
+                    for(var i = 0; i < formgroup.length; i++){
+                        if(formgroup[i].type == "text"){
+                            if (formgroup[i].value == null || formgroup[i].value.length == 0 || caracterEmail.text(form.inputname.value)){
+                                console.log("Incorrecto");
+                                formgroup[i].validate('white', '#f9bdbd');
+                                correct = false;
+                            }else{
+                                formgroup[i].validate('white', '#f9bdbd');
+                                 correct = true;
+                            }
+                        };
+                        if (correct == true) {
+                            console.log("correcto");
+                            form.submit();
+                        };
                     }
+
+                    // Validación  
             } 
             return{
 
@@ -85,25 +108,23 @@ var appPortfolio = {};
 
                     tab += '</div>';
                     console.log(tab);
-             
                 
                     document.getElementById('tabs-group').innerHTML = tab;
-                },
-
-                // Función Validadora de los formularios
-
-                formValidate: function(form){
-                    var caracterEmail = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
-                    form.
-                    if (name !== null){
-                    }else{
-                        name.validate('white', '#f9bdbd');
-                    }
                 }
 
+                // Función Validadora de los formulario
             }
 
         }();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Envio de los datos del formtulario
+
+        document.getElementById("send").onclick = function(){
+                processPortfolio();
+        }
+
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
         // Envio de los indicadores de los Tabs para traer la información
@@ -130,17 +151,9 @@ var appPortfolio = {};
         appPortfolio.taskPortfolio.callAjax();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-        
 
-        // Envio de los datos del formulario
-
-        document.getElementsById("send").onclick = function(){
-
-                var name = document.getElementById("name").value();
-                appPortfolio.taskPortfolio.formValidate(name);
-        }
-
-        /*document.getElementById("send").onclick = function(){
+/*res.validate("Hola perro");
+        document.getElementById("send").onclick = function(){
             var cajaName = document.getElementById('name');
             var cajaEmail = document.getElementById('email');
             var cajaMessage = document.getElementById('text-message');
