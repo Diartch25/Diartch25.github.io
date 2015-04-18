@@ -22,3 +22,14 @@
 	width:42%;
 }
 
+.formadvice{
+	background: $project;
+	padding: 12px 1%;
+	width: $total;
+	transition: $hovers;
+	span{
+		border-radius: 3px;
+		color: $cyan !important;
+	}
+}
+

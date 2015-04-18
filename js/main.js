@@ -33,7 +33,7 @@ var appPortfolio = {};
                    
                     // -- Cambia Textos
 
-                    Element.method('changetext', function(s){
+                    Element.method('changeText', function(s){
                         this.innerHTML = s;
                         return this;
                     });
@@ -49,10 +49,14 @@ var appPortfolio = {};
 
                     form.preventDefault();
                     for(var i = 0; i < formgroup.length; i++){
+
+                        // Detector de tipo de input
                         if(formgroup[i].type == "text"){
+                            // Detector de caracteres no permitidos
                             if (formgroup[i].value == null || formgroup[i].value.length == 0 || caracterEmail.text(form.inputname.value)){
                                 console.log("Incorrecto");
                                 formgroup[i].validate('white', '#f9bdbd');
+                                advice.changeText("Thank's!").validate('#4e7e7e', '#bfffca');
                                 correct = false;
                             }else{
                                 formgroup[i].validate('white', '#f9bdbd');
@@ -62,6 +66,8 @@ var appPortfolio = {};
                         if (correct == true) {
                             console.log("correcto");
                             form.submit();
+                        }else{
+                            advice.changeText("There are white spaces").validate('white', '#f9bdbd');
                         };
                     }
 
@@ -70,7 +76,6 @@ var appPortfolio = {};
             return{
 
                 // Llamado Ajax por JQuery
-
                 callAjax: function(){
                     $.ajax({
                         type: "GET",
@@ -94,20 +99,17 @@ var appPortfolio = {};
 
                     var tab = '<div class="project">';
 
-                        tab += '<div id="info-project" class="standard-text recent-content">';
+                            tab += '<div id="info-project" class="standard-text recent-content">';
                             tab += drawn[n].infos;
-                        tab += '</div>';
-
-                        tab += '<div id="info-img" class="recent-img">';
+                            tab += '</div>';
+                            tab += '<div id="info-img" class="recent-img">';
                             tab += '<img src="' + drawn[n].imagen + '">';
-                        tab += '</div>';
-
-                        tab += '<div class="recent-links">';
+                            tab += '</div>';
+                            tab += '<div class="recent-links">';
                             tab += '<a class="button-info-dark" href="allprojects/project/project1.html" >Ver more</a>';
-                        tab += '</div>';
-
-                    tab += '</div>';
-                    console.log(tab);
+                            tab += '</div>';
+                            tab += '</div>';
+                            //Prueba: console.log(tab);
                 
                     document.getElementById('tabs-group').innerHTML = tab;
                 }
@@ -150,19 +152,21 @@ var appPortfolio = {};
 
         appPortfolio.taskPortfolio.callAjax();
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ---- Proceso de Javascript del Portafolio
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+    Es un script que se ejecuta atrvez de closures y metodos.
 
-/*res.validate("Hola perro");
-        document.getElementById("send").onclick = function(){
-            var cajaName = document.getElementById('name');
-            var cajaEmail = document.getElementById('email');
-            var cajaMessage = document.getElementById('text-message');
-            appPortfolio.taskProtfolio.formValidate(cajaName, cajaEmail, cajaMessage);
-            cajaName.validate('white', '#f9bdbd');
-            cajaEmail.validate('white', '#f9bdbd');
-            cajaMessage.validate('white', '#f9bdbd');
-        }*/
+    Una función principal consume la validación, esta función es aplicada en el formulario de contactos con 
+    la intención de evitar que el usuariodeje espacios blancos o con caracteres incorrectos.
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+    Mientras que por modulos se realiza el llamado Ajax y el dibujado de la información que está dentro
+    de los Tabs, que están en la sección Recents Projects, atravez de un Json que posee los tres proyectos
+    recientes.
 
-    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    Nota: el llamado Ajax solo funciona con JQuery y si se usa Firefox como navegador.
+
+    */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
