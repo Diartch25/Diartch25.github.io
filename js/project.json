@@ -2,18 +2,18 @@
 	"proyecto":[
 			{
 				"nombre":"Proyecto A",
-				"infos": "<p>1  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
+				"infos": "<p>Integer hendrerit tortor non aliquam tristique. Nullam tincidunt massa elementum diam facilisis, ornare dapibus eros vulputate. Nam enim lectus, semper eget tellus sit amet, lobortis imperdiet purus. Sed suscipit velit sapien, vel iaculis sem ultricies ut. Morbi vitae efficitur velit. Aliquam vulputate, nibh quis rhoncus tincidunt, metus arcu mattis neque, in imperdiet lacus nibh nec massa. Cras ultricies condimentum sem non ullamcorper.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
 				"imagen": "img/img-project-default.png"
 			},
 			{
 				"nombre":"Proyecto B",
-				"infos": "<p>2  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
-				"imagen": "img/img-project-default.png"
+				"infos": "<p>Curabitur sit amet volutpat diam. Nunc commodo ex non pulvinar vehicula. Sed gravida tortor sed lorem imperdiet, a consectetur ipsum condimentum. Etiam dictum varius porta. Morbi quis orci quis urna convallis mollis et eu ligula. Donec sed ipsum interdum, sagittis libero at, sagittis dui.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
+				"imagen": "img/lailuminada.png"
 			},
 			{
 				"nombre":"Proyecto C",
-				"infos": "<p>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi elit, bibendum id ante sit amet, tristique maximus nibh. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Etiam vestibulum faucibus fermentum. Suspendisse posuere interdum mollis. Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
-				"imagen": "img/img-project-default.png"
+				"infos": "<p>Nullam tincidunt massa elementum diam facilisis, ornare dapibus eros vulputate. Nam enim lectus, semper eget tellus sit amet, lobortis imperdiet purus. Sed suscipit velit sapien, vel iaculis sem ultricies ut. Morbi vitae efficitur velit. Aliquam vulputate, nibh quis rhoncus tincidunt, metus arcu mattis neque, in imperdiet lacus nibh nec massa. Cras ultricies condimentum sem non ullamcorper. </p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit vel nisi tempus auctor.</p><p>Vivamus in purus in nulla molestie consectetur. Nullam sollicitudin velit velnisi tempus auctor.</p><p><span>25 March, 2015</span></p>",
+				"imagen": "img/Logo.png"
 			}			
 		]
 }
