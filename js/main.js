@@ -67,7 +67,7 @@ var appPortfolio = {};
                             console.log("correcto");
                             form.submit();
                         }else{
-                            advice.changeText("There are white spaces").validate('white', '#f9bdbd');
+                            advice.changeText("Hay espacios importantes en Blanco").validate('white', '#f9bdbd');
                         };
                     }
 
@@ -106,7 +106,7 @@ var appPortfolio = {};
                             tab += '<img src="' + drawn[n].imagen + '">';
                             tab += '</div>';
                             tab += '<div class="recent-links">';
-                            tab += '<a class="button-info-dark" href="allprojects/project/project1.html" >Ver more</a>';
+                            tab += '<a class="button-info-dark" href="allprojects/project/project1.html" >Ver más</a>';
                             tab += '</div>';
                             tab += '</div>';
                             //Prueba: console.log(tab);
