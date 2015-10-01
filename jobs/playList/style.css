@@ -57,6 +57,22 @@ body{
 	margin-bottom: 10px;
 }
 
+h1{
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto
+	display: inline-block;
+	width: 100%;
+
+}
+
+.credits{
+	text-align: center;
+	margin: 0 auto
+	display: inline-block;
+	width: 100%;
+}
+
 h2{
 	font-size: 20px;
 	margin: 0;

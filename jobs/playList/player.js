@@ -15,6 +15,20 @@
 	/* array songs */
 	var playList = new Array();
 	playList[0] = {src:'http://live3.goear.com/listen/200d41eca88ffc58b8ea92ca7b633b4b/560d6c9d/sst/mp3files/20082006/6d25b5f859b8d6a9c294095dac547c13.mp3', name: 'Just cant get enough', artist: 'Depeche Mode' };
+	playList[1] = {src:'http://live3.goear.com/listen/45da2b1c7aa304ff0061164a6c99e9ad/560d6e91/sst2/mp3files/17102006/3af97bcc5b5e205b778d594d8fc2b862.mp3
+', name: 'Love my way', artist: 'The Psychedelic Furs' };
+	playList[2] = {src:'http://live3.goear.com/listen/45da2b1c7aa304ff0061164a6c99e9ad/560d6e91/sst2/mp3files/17102006/3af97bcc5b5e205b778d594d8fc2b862.mp3
+', name: 'Pale Shelter', artist: 'Tears for Fears'};
+	playList[3] = {src:'http://live3.goear.com/listen/dd38ba5df97f8fa718fcf2d172ce9e31/560d7077/sst3/mp3files/07022007/eadb0986aadeb079b0bdc361e4ea5adf.mp3
+', name: 'You make me feel', artist: 'Sylvester'};
+	playList[4] = {src:'http://live3.goear.com/listen/04014939f7297264965be1e1c070167e/560d7273/sst5/mp3files/12052010/8759853bbfdb08127087b0dd4d7391ac.mp3
+', name: 'Born slippy nuxx', artist: 'Underworld'};
+	playList[5] = {src:'http://live6.goear.com/listen/bc0eb655b382c251bfbc47a4de253718/560d72f9/sst/mp3files/22082006/26416bc7102c727344336e99c4017152.mp3
+', name: 'What is love?', artist: 'Haddaway'};
+	playList[5] = {src:'http://live6.goear.com/listen/878200ae88e7274594754b89f73b7fc2/560d7343/sst6/mp3files/03022011/9e11d99b2e63fdf9fbfd713654c8e5e6.mp3
+', name: 'Dont you want me baby', artist: 'Human League'};
+
+
 
 	/* draw playlist */
 	function drawPlayList(){
