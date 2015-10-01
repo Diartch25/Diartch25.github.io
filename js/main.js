@@ -106,7 +106,7 @@ var appPortfolio = {};
                             tab += '<img src="' + drawn[n].imagen + '">';
                             tab += '</div>';
                             tab += '<div class="recent-links">';
-                            tab += '<a class="button-info-dark" href="allprojects/project/project1.html" >Ver más</a>';
+                            tab += '<a class="button-info-dark" href="'+ drawn[n].url +'" >Ver más</a>';
                             tab += '</div>';
                             tab += '</div>';
                             //Prueba: console.log(tab);

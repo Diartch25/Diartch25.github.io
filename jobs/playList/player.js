@@ -14,13 +14,7 @@
 
 	/* array songs */
 	var playList = new Array();
-	playList[0] = {src:'/audio/1.mp3', name: 'Uptown funk', artist: 'Mark Ronson Ft. Bruno Mars' };
-	playList[1] = {src:'/audio/2.mp3', name: 'Kids', artist: 'MG MT' };
-	playList[2] = {src:'/audio/3.mp3', name: 'Party rock anthem', artist: 'LMFAO, Lauren Bennett and GoonRock' };
-	playList[3] = {src:'/audio/4.mp3', name: 'I feel the earth move', artist: 'Martika.' };
-	playList[4] = {src:'/audio/5.mp3', name: 'Love my way', artist: 'Psychedelic Furs.' };
-	playList[5] = {src:'/audio/6.mp3', name: 'Night fever', artist: 'Bee Gees' };
-	playList[6] = {src:'/audio/7.mp3', name: 'One more time', artist: 'Daft Punk' };
+	playList[0] = {src:'http://live3.goear.com/listen/200d41eca88ffc58b8ea92ca7b633b4b/560d6c9d/sst/mp3files/20082006/6d25b5f859b8d6a9c294095dac547c13.mp3', name: 'Just cant get enough', artist: 'Depeche Mode' };
 
 	/* draw playlist */
 	function drawPlayList(){

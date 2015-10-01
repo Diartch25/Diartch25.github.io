@@ -1,0 +1,535 @@
+/*
+	// ------- Tabla de Contenidos ------- //
+	
+	* Estilos Globales
+	  * Estilo de la Nvegación
+	  * Estilo de las Subsecciones
+
+	* Estilos del Home
+	  * Estilos del Acerca de
+
+	* Estilos de la sección Productos
+      * Estilos de la Galerìa
+
+	* Estilos de la sección Proyectos y Noticias
+		* Noticia específica
+
+	* Contactos
+
+	* Footer
+
+/*
+
+/* ---------------- Estilos Globales ---------------- */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.eot');
+    src: url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.woff2') format('woff2'),
+         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.woff') format('woff'),
+         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.ttf') format('truetype'),
+         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.svg#happy_monkeyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('../Fonts/karla/Karla-Regular-webfont.eot');
+    src: url('../Fonts/karla/Karla-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/karla/Karla-Regular-webfont.woff2') format('woff2'),
+         url('../Fonts/karla/Karla-Regular-webfont.woff') format('woff'),
+         url('../Fonts/karla/Karla-Regular-webfont.ttf') format('truetype'),
+         url('../Fonts/karla/Karla-Regular-webfont.svg#karlaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+    font-family: "karlaregular", Arial, sans-serif;
+}
+
+
+h2{
+	color: #C9E8F6;
+	font-family: "karlaregular";
+	font-size: 2.5rem;
+	border-bottom: 2px solid #C9E8F6;
+	margin: 0 auto;
+	padding: 154px 0 38px 0;
+	text-align: center;
+	width: 70%;
+}
+
+ul{
+	list-style: none;
+}
+
+/* ---------------- Estilos de la Navegación ---------------- */
+
+.first-nav{
+	float: right;
+	margin-right: 8%;
+}
+
+.first-nav a{
+	color: #fff;
+	font-size: 1.41rem;
+	text-decoration: none;
+}
+
+.first-li{
+	display:inline-block;
+	font-family: 'happy_monkeyregular';
+	margin: 0px 30px 0px 30px;
+	margin-bottom: 0px;
+}
+
+.first-li a:hover {
+	color: #9FC559;
+
+}
+
+.first-li:hover ul{
+	display: block;
+}
+
+.first-nav li:hover{
+	border-bottom: 1px solid  #9FC559;
+}
+
+.header-button{
+	font-family: 'happy_monkeyregular';
+	margin: 0 auto;
+	margin-top: 1rem;
+	padding: 15px;
+	width: 278px;
+}
+
+.header-nav{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(65,65,65,0.53)), to(rgba(155,155,155,0.90)));
+	padding: 55px;
+}
+
+.logo{
+	position: absolute;
+	width: 400px;
+}
+
+.nav-banner{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.sub-menu a{
+	color: #95D5F2;
+	font-size: 1.2rem;
+}
+
+.sub-menu li{
+	background-color: #555757;
+	display:block;
+	font-size: 1.2rem;
+	margin-bottom: 4px;
+	padding: 9px 5px 9px 9px;
+}
+
+.sub-menu{
+	border-radius: 5px;
+	display: none;
+	margin-left: -17px;
+	padding: 11px;
+	position: absolute;
+}
+
+.sub-menu li:hover a{
+	color: #555757;
+}
+
+.sub-menu li:hover{
+	border-bottom: 1px solid  #000;
+	background-color: #95D5F2;
+}
+
+/* ---------------- Estilos de las Subsecciones ---------------- */
+
+.subsection > p{
+	color: #D5D5D5;
+	font-size: 1.4rem;
+	margin: 0 auto;
+	padding: 38px 0;
+	text-align: center;
+	width: 70%;
+}
+
+.title-header-subsection > p{
+	padding: 39px 0 0 0;
+	text-align: left;
+	width: 94%;
+}
+
+.subsection-products, .subsection-projects-new, .subsection-contacts, .subsection-about, .title-header-subsection{  /*Pertenece también a la sección de Proyectos*/
+	padding: 30px 5%;
+}
+
+
+
+/* ---------------- Estilos del Home ---------------- */
+
+.button-products{
+	background-color: rgba(147,212,244,0.4);
+	border: 1px solid #93D4F4;
+	color: #ddd;
+	display: table;
+	font-size: 22px;
+	margin: 0 auto;
+	padding: 10px 25px 10px 25px;
+}
+
+.button-products:hover{
+	background-color: rgba(255,255,255,0.4);
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.header-home{
+    background: url(../img/Background-Example.jpg) no-repeat center;
+	background-size: cover;
+	height: 900px;
+}
+
+.title-group{
+	padding: 350px 0;
+}
+
+.title-header{
+	margin: 0 auto;
+	background-color: rgba(000,000,000,0.4);
+	text-align: center;
+	width: 56%;
+}
+
+.title-header h1{
+	color: #DEDD51;
+	font-family: 'happy_monkeyregular';
+	font-size: 3.6rem;
+	text-transform: uppercase;
+	padding: 30px 0px;
+}
+
+.title-header p{
+	color: #9FC559;
+	font-size: 2rem;
+	padding-bottom: 30px;
+}
+
+
+
+
+/* ---------------- Estilos del Acerca de ---------------- */
+.subsection-about{
+	background-color: #262625;
+}
+
+.subsection-about > p{
+	float: left;
+	line-height: 28px;
+	margin-left: 111px;
+	text-align: left;
+	width: 60%;
+}
+
+.subsection-about img{
+	margin: 33px 0 100px 33px;
+	width: 330px;
+}
+
+/* ---------------- Estilos de la Sección Productos ---------------- */
+
+.header-products, .subsection-products{
+	background-color: #344C53;
+}
+
+.header-projects-news, .subsection-infobox{
+	background-color: #127059;
+	overflow: hidden;
+}
+
+
+.title-header-subsection h1, .title-header-subsection h1 a{
+	border-bottom: 2px solid #C9E8F6;
+	color: #C9E8F6;
+	font-size: 2.3rem;
+	margin: 30px 0;
+	padding: 103px 0 23px 3px;
+}
+
+.title-header-subsection h1 a:hover{
+	color: #9FC559;
+}
+
+/*------------------ Estilos de la Galerìa -----------------------*/
+
+.div-category{
+	margin: 20px auto;
+	overflow: hidden;
+	width: 86%;
+}
+
+.div-cat {
+    border: 2px solid #9FC559;
+    cursor: default;
+    height: 200px;
+    margin: 40px 2%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+.div-cat a {
+	color: #C9E8F6;
+	font-size: 0.9rem;
+	font-family: "happy_monkeyregular";
+	border: 1px solid #C9E8F6;
+	border-color: rgba(149, 213, 242, 0.9);
+	padding: 4px 9px;
+}
+
+.div-cat a:hover {
+	color: #FFF;
+	border: 1px solid #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.div-cat h3 {
+	color: #EFE54F;
+	font-size: 1.3rem;
+	margin: 8px 0 0 0;
+	padding: 2px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.div-cat img {
+   display: block;
+   height: 200px;
+   margin: 0 auto;
+   position: relative;
+   width: 300px;
+}
+
+.div-cat p {
+	color: #9FC559;
+	font-size: 0.8rem;
+	padding: 7px 7px 18px;
+	position: relative;
+	text-align: center;
+}
+
+.div-cat .deco, .div-cat .div-information {
+   height: 200px;
+   left: 0;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 300px;
+}
+
+
+/* ---------------- Estilos de la Sección Proyectos ---------------- */
+
+.div-infobox{
+	box-sizing: border-box;
+	background-color: #465C66;
+	border-top: 1px solid #E6FEB9;
+	border-bottom: 1px solid #E6FEB9;
+	overflow: hidden;
+	padding: 33px 3%;
+	margin: 64px auto;
+	width: 90%;
+
+}
+
+.div-infobox:hover{
+	background-color: #63899A;
+}
+
+.div-infobox-title{
+	display: inline;
+	float: left;
+	width: 30%;
+}
+
+.div-infobox-title h2{
+	border: none;
+	color: #C9E8F6;
+	font-size: 1.8rem;
+	margin: 0px;
+	padding: 18px 0;
+	text-align: left;
+}
+
+.div-infobox-title img{
+	border: 2px solid #C9E8F6;
+	border-radius: 3px;
+	height: 229px;
+	width: 100%;
+}
+
+.div-infobox-content{
+	color: #D5D5D5;
+	display: inline;
+	float: right;
+	font-size: 1.2rem;
+	width: 70%;
+}
+
+.div-infobox-content p{
+	font-size: 1.2rem;
+	color: #D5D5D5;
+	margin: 24px 5%;
+}
+
+/* ---------------- Noticia específica ---------------- */
+
+.div-infobox-title .img-noticia{
+	margin-top: 41px;
+	width: 383px;
+	height: 291px;
+}
+
+/* ---------------- Contactos ---------------- */
+
+.div-contacts{
+	margin: 0 auto;
+	padding: 0 0 100px 0;
+	width: 70%;
+}
+
+.forms{
+	background-color: #232344;
+	border-bottom: 2px solid #F7F7F5;
+	border-right: 2px solid #F7F7F5;
+	color: #C9E8F6;
+	display: block;
+	font-family: "happy_monkeyregular";
+	margin: 24px auto;
+	font-size: 1.1rem;
+	padding: 4px 13px;
+	border-top: 0px solid #232344;
+	border-left: 0px solid #232344;
+}
+
+.forms:focus, .forms-textarea:focus{
+	background-color: #4A4A6D;
+}
+
+.forms{
+	height: 35px;
+	width: 41%;
+}
+
+.forms-textarea{
+	height: 155px;
+	width: 41.22%;
+}
+
+.subsection-contacts{
+	background-color: #7B7BB1;
+	overflow: hidden;
+	padding: 0 
+}
+
+/* ---------------- Footer ---------------- */
+
+footer{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1,1,1,0.73)), to(rgba(150,155,155,0.9)));
+	padding: 42px 5% 115px 5%;
+}
+
+footer img{
+	float: left;
+}
+
+.contacts p{
+	margin: 20px 0;
+}
+
+.contacts p a{
+	color: #FFF;
+}
+
+.contacts p a:hover{
+	color: #9FC559;
+}
+
+.contacts, .social-network{
+	width: 33%;
+}
+
+.contacts, .logo-central{
+	float: left;
+}
+
+.foot-facebook{
+	background: url(../img/facebook-footer.png)no-repeat top center;
+	background-size: 43px;
+}
+
+.foot-facebook:hover{
+	background: url(../img/facebook-footer-hov.png)no-repeat top center;
+	background-size: 43px;
+}
+
+.foot-twiter{
+	background: url(../img/twitter-footer.png)no-repeat top center;
+	background-size: 43px;
+}
+
+.foot-twiter:hover{
+	background: url(../img/twitter-footer-hov.png)no-repeat top center;
+	background-size: 43px;
+}
+
+.logo-central{
+	margin: 15px 0 0 0;
+}
+
+.logo-footer{
+	width: 230px;
+}
+
+.social-network{
+	float: right;
+	margin: 30px 0 0 0;
+}
+
+.social-network li{
+	float: right;
+	width: 58px;
+	padding: 15px 8px;
+}
+
+.social-network a{
+	color: rgba(255,255,255,0);
+}
+
+
+
+
+

@@ -3,17 +3,20 @@
 			{
 				"nombre":"Proyecto A",
 				"infos": "<p>La iluminada es un proyecto grupal que consiste en una página de ventas de artículos de iluminación, requirió de una galeria de imágenes.</p><p>Se destaca por que permitió enseñarme como crear Style Tiles, usar herramientas y animaciónes de una fuente externa, y adaptarlas al proyecto</p><p><span>Marzo, 2015</span></p>",
-				"imagen": "img/lailuminada.png"
+				"imagen": "img/lailuminada.png",
+				"url": "jobs/lailuminada/index.html"
 			},
 			{
 				"nombre":"Proyecto B",
 				"infos": "<p>Buy Fast Es un proyecto que explora el Diseño de Interfaces Gráficas, y esta en 2 diferentes versiones</p><p>Trata de una aplicación de compras que vendría siendo un supermercado virtual, donde compras el o los artículos que necesitas y luego son llevados a su hogar</p><p><span>Noviembre, 2014</span></p>",
-				"imagen": "img/BuyFast_v1.png"
+				"imagen": "img/BuyFast_v1.png",
+				"url": ""
 			},
 			{
 				"nombre":"Proyecto C",
 				"infos": "<p>Player List es un proyecto que en si es un reproductor web de Música</p><p>Forma parte de un proyecto grupal de Javascript donde se utilizan los patrones de diseño y el uso del tag de audio de HTML5</p><p>Reproduce La música simulando un toca discos y maneja el tiempo de reproducción, el control de volumen y reproducción simula los controles de un toca discos, todo mientras un disco da vueltas.</p><span>Julio, 2015</span></p>",
-				"imagen": "img/none.png"
+				"imagen": "img/none.png",
+				"url": "jobs/playList/index.html"
 			}			
 		]
 }
