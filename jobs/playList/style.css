@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+body{
+	font-family: 'Muli', Arial, sans-serif;
+	background: #e3dcd4;
+}
+
+.playerbox {
+	width: 850px;
+	height: 450px;
+	margin: 30px auto 0;
+	padding: 15px;
+	background-color: #00aa77;
+	-webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+.playerbox-controls {
+	margin: 0 auto;
+	width: 850px;
+	padding: 12px 28px;
+	/*height: 70px;*/
+	overflow: hidden;
+	margin-bottom: 40px;
+	background-color: #222;
+	-webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+
+.ulListSongs {
+	padding: 0;
+	float: left;
+	background-color: transparent;
+	width: 350px;
+	height: 420px;
+	overflow-y: scroll;
+}
+
+.list-song {
+	background-color: #eee;
+	list-style: none;
+	margin: 12px auto 0;
+	padding: 6px;
+	height: 60px;
+	cursor: pointer;
+	width: 94%;
+}
+
+.list-song:hover{
+	background: #c1baba;
+}
+
+.list-song:last-child {
+	margin-bottom: 10px;
+}
+
+h2{
+	font-size: 20px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.title-song {
+	color: #176d3c;
+}
+
+h3 {
+	font-size: 14px;
+	margin: 4px 0;
+}
+
+.btn{
+	color: #222;
+	border-radius: 2px;
+}
+
+.btn-default {
+	width: 60px;
+	margin: 4px 10px;
+}
+
+.song-info {
+	width: 90%;
+	margin: 0 auto;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.name-song { /* text name current song */
+	display: block;
+	margin-top: 7px;
+	text-align: center;
+	color: white;
+}
+
+.song-actual-controls {
+	 position: absolute;
+	 margin-left: 9%;
+	 margin-top: 45px;
+	 display: inline-block;
+	 text-align: center;
+}
+
+.currentSong { /* text time current song */
+	display: inline-block;
+	color: #fff;
+}
+
+
+input[type=range].volumen-line {
+	-webkit-appearance: slider-vertical;
+	display: inline-block;
+	width: 60px;
+}
+
+.container-time-line {
+	float: right;
+	color: white;
+}
+
+input[type=range].time-line{
+	-webkit-appearance: slider-vertical;
+	display: inline-block;
+	width: 60px;
+}
+
+/*=======================  Tocadiscos ==============================*/
+
+.image {
+	width: 450px;
+	padding: 10px 25px;
+	margin-left: 16px;
+}
+
+.tocaDisco {
+	width: 145px;
+	position: absolute;
+	right: 435px;
+	bottom: 660px;
+}
+
+
+@-moz-keyframes animationRotate { 
+	100%{ -moz-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes animationRotate {
+	100%{ -webkit-transform: rotate(360deg); }
+}
+
+@keyframes animationRotate{
+	100%{ -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+}
+
+
+/*============= Scrollbar style ===============*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+.active:active {
+	background-color: green;
+}
