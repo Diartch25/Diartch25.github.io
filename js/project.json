@@ -15,7 +15,7 @@
 			{
 				"nombre":"Proyecto C",
 				"infos": "<p>Player List es un proyecto que en si es un reproductor web de Música</p><p>Forma parte de un proyecto grupal de Javascript donde se utilizan los patrones de diseño y el uso del tag de audio de HTML5</p><p>Reproduce La música simulando un toca discos y maneja el tiempo de reproducción, el control de volumen y reproducción simula los controles de un toca discos, todo mientras un disco da vueltas.</p><span>Julio, 2015</span></p>",
-				"imagen": "img/none.png",
+				"imagen": "img/tocaDisco.png",
 				"url": "jobs/playList/index.html"
 			}			
 		]
