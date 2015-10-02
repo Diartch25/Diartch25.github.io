@@ -20,7 +20,7 @@ body{
 	margin: 0 auto;
 	width: 850px;
 	padding: 12px 28px;
-	/*height: 70px;*/
+	height: 200px; 
 	overflow: hidden;
 	margin-bottom: 40px;
 	background-color: #222;
@@ -51,6 +51,7 @@ body{
 
 .list-song:hover{
 	background: #c1baba;
+	transition: all 0.3s;
 }
 
 .list-song:last-child {
@@ -81,6 +82,7 @@ h2{
 
 .title-song {
 	color: #176d3c;
+	transition: all 0.3s;
 }
 
 h3 {
@@ -89,8 +91,19 @@ h3 {
 }
 
 .btn{
-	color: #222;
-	border-radius: 2px;
+	color: #00aa77;
+	font-size: 19px;;
+	border: none;
+	background-color: #222;
+	opacity: 0.6;
+	border-radius: 1px;
+	transition: all 0.5s;
+}
+.btn:hover{
+	color: #eee;
+	background: none;
+	/*background-color: #3d3b3b;*/
+	transition: all 0.3s;
 }
 
 .btn-default {
@@ -113,11 +126,13 @@ h3 {
 }
 
 .song-actual-controls {
-	 position: absolute;
-	 margin-left: 9%;
-	 margin-top: 45px;
-	 display: inline-block;
-	 text-align: center;
+	  /* position: absolute; */
+  	/* margin-left: 9%; */
+ 	 /* margin-top: 45px; */
+ 	 /* display: inline-block; */
+	padding: 20px 0;
+  	text-align: center;
+  	width: 80%;
 }
 
 .currentSong { /* text time current song */
@@ -133,14 +148,45 @@ input[type=range].volumen-line {
 }
 
 .container-time-line {
-	float: right;
-	color: white;
+	display: inline-block;
+  	width: 100%;
+  	padding: 16px 0;	
+}
+
+.container-time-line p{
+	  color: white;
+  	text-align: center;
+  	margin: -42px 0;
+}
+
+.time-box, .vol-box, .song-actual-controls{
+	display: inline-block;
+	float: left;
+}
+
+.time-box, .vol-box{
+	width: 10%;
+  	height: 121px;
+  	overflow: hidden;
 }
 
 input[type=range].time-line{
-	-webkit-appearance: slider-vertical;
-	display: inline-block;
-	width: 60px;
+	-webkit-appearance: none;
+  	-webkit-transform: rotateZ(-90deg);
+  	background-color: #3d3b3b;
+  	display: inline-block;
+  	margin: 53px -19px;
+  	width: 115px;
+  	height: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    	 -webkit-appearance: none;
+    	 transition: all 0.5s;
+    	background-color: #00aa77;
+    	opacity: 0.6;
+    	width: 10px;
+    	height: 26px;
 }
 
 /*=======================  Tocadiscos ==============================*/

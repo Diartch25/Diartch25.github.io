@@ -9,14 +9,15 @@
 	<body>
         <div id="chart" class="playerbox">
             <img id="img" class="image" src="img/disco.png" alt="disco">
-            <img src="img/tocaDisco.png" alt="tocaDisco" class="tocaDisco">
+            <!--img src="img/tocaDisco.png" alt="tocaDisco" class="tocaDisco"-->
         </div>
         <div class="playerbox-controls">
         <div id="nameSong" class="name-song"> </div>
-            <input type="range" min="0" step="1" value="50" max="100" id="volumen" class="volumen-line">
-
+            <div class="vol-box">
+                <input type="range" min="0" step="1" value="50" max="100" id="volumen" class="time-line">
+            </div>
             <div class="song-actual-controls">            
-                <button type="button" class="btn btn-default navbar-btn" onclick="player.playAndPause(this)">
+                <button type="button" class="btn btn-default navbar-btn" onclick="player.toggleSound()">
                     <i id="playPause" class="fa fa-play"></i>
                 </button>
 
@@ -35,11 +36,11 @@
                     <i id="mute" class="fa fa-volume-up"></i>
                 </button>
             </div>
-            <div class="container-time-line">
-                <input type="range" min="0" step="1" value="0" id="time" class="time-line">
-                <h3 id="currentSong">0:00 / 0:00</h3>
+
+            <div class="time-box">
+                    <input type="range" min="0" step="1" value="0" id="time" class="time-line">
             </div>
-        </div>
+            <div class="container-time-line"><p id="currentSong" >0:00 / 0:00</p></div> 
         <h1>Play List</h1>
         <p class="credits">Musica: www.goear.com</p>
 	</body>

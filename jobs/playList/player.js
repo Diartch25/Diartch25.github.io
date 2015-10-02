@@ -15,12 +15,13 @@
 	/* array songs */
 	var playList = new Array();
 	playList[0] = {src:'http://live3.goear.com/listen/200d41eca88ffc58b8ea92ca7b633b4b/560d6c9d/sst/mp3files/20082006/6d25b5f859b8d6a9c294095dac547c13.mp3', name: 'Just cant get enough', artist: 'Depeche Mode' };
-	playList[1] = {src:'http://live3.goear.com/listen/45da2b1c7aa304ff0061164a6c99e9ad/560d6e91/sst2/mp3files/17102006/3af97bcc5b5e205b778d594d8fc2b862.mp3', name: 'Love my way', artist: 'The Psychedelic Furs' };
-	playList[2] = {src:'http://live3.goear.com/listen/45da2b1c7aa304ff0061164a6c99e9ad/560d6e91/sst2/mp3files/17102006/3af97bcc5b5e205b778d594d8fc2b862.mp3', name: 'Pale Shelter', artist: 'Tears for Fears'};
-	playList[3] = {src:'http://live3.goear.com/listen/dd38ba5df97f8fa718fcf2d172ce9e31/560d7077/sst3/mp3files/07022007/eadb0986aadeb079b0bdc361e4ea5adf.mp3', name: 'You make me feel', artist: 'Sylvester'};
-	playList[4] = {src:'http://live3.goear.com/listen/04014939f7297264965be1e1c070167e/560d7273/sst5/mp3files/12052010/8759853bbfdb08127087b0dd4d7391ac.mp3', name: 'Born slippy nuxx', artist: 'Underworld'};
-	playList[5] = {src:'http://live6.goear.com/listen/bc0eb655b382c251bfbc47a4de253718/560d72f9/sst/mp3files/22082006/26416bc7102c727344336e99c4017152.mp3', name: 'What is love?', artist: 'Haddaway'};
-	playList[6] = {src:'http://live6.goear.com/listen/878200ae88e7274594754b89f73b7fc2/560d7343/sst6/mp3files/03022011/9e11d99b2e63fdf9fbfd713654c8e5e6.mp3', name: 'Dont you want me baby', artist: 'Human League'};
+	playList[1] = {src:'http://live3.goear.com/listen/a3b700b9ac74a11bcdf9667aa1491c4c/560eb51d/sst2/mp3files/17102006/3af97bcc5b5e205b778d594d8fc2b862.mp3', name: 'Love my way', artist: 'The Psychedelic Furs' };
+	playList[2] = {src:'http://live6.goear.com/listen/460cd6ea15535324b9025232c1ace0af/560eb66f/sst3/mp3files/01052007/c8a921252d7b57686b6c565083ad175d.mp3', name: 'Pale Shelter', artist: 'Tears for Fears'};
+	playList[3] = {src:'http://live3.goear.com/listen/a7792c5e0de568bfab84d04cba2cb04f/560eb72c/sst3/mp3files/07022007/eadb0986aadeb079b0bdc361e4ea5adf.mp3', name: 'You make me feel', artist: 'Sylvester'};
+	playList[4] = {src:'http://live6.goear.com/listen/86e55acbb636e42f398b6b617916749a/560eb7b5/sst5/mp3files/12052010/8759853bbfdb08127087b0dd4d7391ac.mp3', name: 'Born slippy nuxx', artist: 'Underworld'};
+	playList[5] = {src:'http://live3.goear.com/listen/3f17a51f083ce3c7e64dff4aec1fff83/560eb842/sst/mp3files/22082006/26416bc7102c727344336e99c4017152.mp3', name: 'What is love?', artist: 'Haddaway'};
+	playList[6] = {src:'http://live6.goear.com/listen/3648480d8c9ad6bb232400e5631fcb82/560eb88b/sst2/mp3files/27112006/9331e412f3e66e045862127f9b6bde23.mp3', name: 'Dont you want me baby', artist: 'Human League'};
+	playList[7] = {src:'http://live8.goear.com/listen/985272dab4986b86470cae63e83ba73c/560eb94f/sst11/mp3files/28062013/7249a38f0f285f36fcf8cd4939a757e7.mp3', name: 'No more words', artist: 'Berlin'};
 
 
 
@@ -97,6 +98,17 @@
 		}
 	};
 
+	function play(){
+		audio.play();
+		rotateAnimation();
+		toggleSound();
+	};
+
+	/* pause music */
+	function pause(){
+		audio.pause();
+		stopAnimation();
+	};
 	/* silder volume control */
 	function slideVolume(){
 		volumeValue = volLine.value / 100;
@@ -181,20 +193,22 @@
 		//console.log("debugger stopAnimation");
 	}
 
-	/* function button play pause */
-	function playAndPause(){
+	function toggleSound(){
+		playing = !playing;
 		var buttonPlay = document.getElementById("playPause");
-		if(audio.paused){
-		    	audio.play();
-		    	rotateAnimation();
-					buttonPlay.classList.remove('fa-play');
-					buttonPlay.classList.add('fa-pause');
-	    }else{
-					audio.pause();
-					stopAnimation();
-					buttonPlay.classList.remove('fa-pause');
-					buttonPlay.classList.add('fa-play');
-	    }
+		if(playing){
+			audio.pause();
+			stopAnimation();
+			buttonPlay.classList.remove('fa-pause');
+			buttonPlay.classList.add('fa-play');
+			console.log("debugger pause");
+		}else{
+			buttonPlay.classList.remove('fa-play');
+			buttonPlay.classList.add('fa-pause');
+			audio.play();
+			rotateAnimation();
+			console.log("debugger play");
+		}
 	}
 
 	/* function mute */
@@ -227,6 +241,8 @@
 
 		/* Revealing Module Pattern */
 		return {
+			play: 	play,
+			pause: 	pause,
 			repeat: repeat,
 			slideVolume: slideVolume,
 			slideSong: slideSong,
@@ -237,7 +253,7 @@
 			convertFormat : convertFormat,
 			rotateAnimation: rotateAnimation,
 			stopAnimation: stopAnimation,
-			playAndPause: playAndPause,
+			toggleSound: toggleSound,
 			mute: mute,
 			autoNext: autoNext
 		};
