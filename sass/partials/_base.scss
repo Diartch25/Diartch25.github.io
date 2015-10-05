@@ -31,6 +31,15 @@ ul{
 	list-style: none;
 }
 
+.disable-button{
+	color: $disable-text !important; 
+	background: $disable-button !important;
+	&:hover{
+		color: $disable-text !important;
+		background: $disable-button !important;
+	}
+}
+
 .button-info-dark{
 	@extend %button;
 }
@@ -127,5 +136,11 @@ ul{
 			color: $cyan;
 		}
 	}
+}
+
+/*Desabilitados*/
+
+#contact{
+	display: none;
 }
 

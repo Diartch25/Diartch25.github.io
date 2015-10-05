@@ -29,9 +29,9 @@
 
 	a{
 		padding: 8px 26px;
-		background:  $text-clear;
+		background:  $disable-button;
 		border-radius: 2px;
-		color:  $cyan-second;
+		color: $disable-text;
 		transition: $hovers;
 		&:hover{
 			color:  $text-clear;

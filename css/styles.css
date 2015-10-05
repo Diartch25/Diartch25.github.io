@@ -73,6 +73,13 @@ h2 {
 ul {
   list-style: none; }
 
+.disable-button {
+  color: #a7a7a4 !important;
+  background: #b7b7b7 !important; }
+  .disable-button:hover {
+    color: #a7a7a4 !important;
+    background: #b7b7b7 !important; }
+
 .button-input {
   position: relative; }
 
@@ -136,6 +143,10 @@ ul {
   color: #47878c; }
   .bread a:hover {
     color: #59bec0; }
+
+/*Desabilitados*/
+#contact {
+  display: none; }
 
 .section {
   padding: 140px  14%;
@@ -237,9 +248,9 @@ ul {
     margin: 18px 0; }
   .principal-title a {
     padding: 8px 26px;
-    background: #e6e6e2;
+    background: #b7b7b7;
     border-radius: 2px;
-    color: #47878c;
+    color: #a7a7a4;
     transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1); }
     .principal-title a:hover {
       color: #e6e6e2;
