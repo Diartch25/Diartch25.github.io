@@ -27,43 +27,21 @@
 	padding: 0;
 }
 
-@font-face {
-    font-family: 'happy_monkeyregular';
-    src: url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.eot');
-    src: url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.woff2') format('woff2'),
-         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.woff') format('woff'),
-         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.ttf') format('truetype'),
-         url('../Fonts/happy_monkeyregular/HappyMonkey-Regular-webfont.svg#happy_monkeyregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Muli:400,400italic,300italic,300);
 
-@font-face {
-    font-family: 'karlaregular';
-    src: url('../Fonts/karla/Karla-Regular-webfont.eot');
-    src: url('../Fonts/karla/Karla-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../Fonts/karla/Karla-Regular-webfont.woff2') format('woff2'),
-         url('../Fonts/karla/Karla-Regular-webfont.woff') format('woff'),
-         url('../Fonts/karla/Karla-Regular-webfont.ttf') format('truetype'),
-         url('../Fonts/karla/Karla-Regular-webfont.svg#karlaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 a{
 	text-decoration: none;
 }
-
+  
 body{
-    font-family: "karlaregular", Arial, sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 
 h2{
 	color: #C9E8F6;
-	font-family: "karlaregular";
 	font-size: 2.5rem;
 	border-bottom: 2px solid #C9E8F6;
 	margin: 0 auto;
@@ -91,7 +69,6 @@ ul{
 
 .first-li{
 	display:inline-block;
-	font-family: 'happy_monkeyregular';
 	margin: 0px 30px 0px 30px;
 	margin-bottom: 0px;
 }
@@ -110,7 +87,6 @@ ul{
 }
 
 .header-button{
-	font-family: 'happy_monkeyregular';
 	margin: 0 auto;
 	margin-top: 1rem;
 	padding: 15px;
@@ -223,7 +199,6 @@ ul{
 
 .title-header h1{
 	color: #DEDD51;
-	font-family: 'happy_monkeyregular';
 	font-size: 3.6rem;
 	text-transform: uppercase;
 	padding: 30px 0px;
@@ -303,7 +278,6 @@ ul{
 .div-cat a {
 	color: #C9E8F6;
 	font-size: 0.9rem;
-	font-family: "happy_monkeyregular";
 	border: 1px solid #C9E8F6;
 	border-color: rgba(149, 213, 242, 0.9);
 	padding: 4px 9px;
@@ -427,7 +401,6 @@ ul{
 	border-right: 2px solid #F7F7F5;
 	color: #C9E8F6;
 	display: block;
-	font-family: "happy_monkeyregular";
 	margin: 24px auto;
 	font-size: 1.1rem;
 	padding: 4px 13px;
